@@ -8,12 +8,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class TaroTiController {
     @GetMapping("/leitura")
-    public String greeting(@RequestParam(
+    public String leitura(@RequestParam(
             name="carta",
             required=false,
-            defaultValue="World"
+            defaultValue="tolo"
     ) String carta, Model model) {
-        model.addAttribute("carta", carta);
+        Baralho mybaralho = new Baralho();
+
+        model.addAttribute("carta", mybaralho.getCarta());
         return "leitura";
     }
 }

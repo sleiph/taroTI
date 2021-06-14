@@ -5,6 +5,8 @@
     <title>TaroTI</title>
 </head>
 <body>
-    <p th:text="'Você tirou: ' + ${carta} + '!1!!'" />
+    <p th:text="'Você tirou: ' + ${carta} + '!'"></p>
+    <img th:src="'img/' + ${carta} + '.png'" />
+    <p th:text="${carta.getDescricao()}"></p>
 </body>
 </html>
