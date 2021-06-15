@@ -1,4 +1,4 @@
-package br.fatec.taroTI;
+package br.fatec.taroTI.entidades;
 
 public class Carta {
     private String nome;
