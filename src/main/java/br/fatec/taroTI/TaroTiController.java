@@ -1,5 +1,7 @@
 package br.fatec.taroTI;
 
+import br.fatec.taroTI.entidades.Baralho;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,11 +13,11 @@ public class TaroTiController {
     public String leitura(@RequestParam(
             name="carta",
             required=false,
-            defaultValue="tolo"
+            defaultValue="Tolo"
     ) String carta, Model model) {
         Baralho mybaralho = new Baralho();
 
-        model.addAttribute("carta", mybaralho.getCarta());
+        model.addAttribute("carta", mybaralho.getLeitura());
         return "leitura";
     }
 }

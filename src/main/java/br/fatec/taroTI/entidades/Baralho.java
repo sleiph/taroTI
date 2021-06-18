@@ -4,18 +4,20 @@ import java.util.Random;
 
 public class Baralho {
     private Carta[] cartas = {
-            new Carta("tolo", "tu tá de meninagem"),
-            new Carta("mago", "o pai tá on"),
-            new Carta("morte", "aí fudeu"),
-            new Carta("asdepaus", "tá criando várias paradas")
+            new Carta("Tolo", "Vai fundo, cara", "Tu tá de meninagem", "tolo"),
+            new Carta("Mago", "O pai tá on", "Temos um Xerox Rolmes", "mago"),
+            new Carta("Morte", "aí fudeu", "aí fudeu", "morte"),
+            new Carta("Às de Paus", "tá criando várias paradas", "Relaxa aí ô Artistão", "asdepaus"),
+            new Carta("IX de Paus", "Depressão", "Depressão pra caralho", "ixdepaus")
     };
 
-    Baralho() {
+    public Baralho() {
 
     }
 
-    public Carta getCarta() {
+    public Carta getLeitura() {
         int i = new Random().nextInt(cartas.length);
+        cartas[i].setDirecao();
         return cartas[i];
     }
 }

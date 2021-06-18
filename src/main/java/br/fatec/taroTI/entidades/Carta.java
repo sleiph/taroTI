@@ -1,30 +1,41 @@
 package br.fatec.taroTI.entidades;
 
+import java.util.Random;
+
 public class Carta {
     private String nome;
-    private String descricao;
+    private String descricaoCerta;
+    private String descricaoTorta;
+    private String imagem;
+    private boolean isTorta;
 
-    Carta() {
-
-    }
-
-    Carta(String n, String d) {
+    Carta(String n, String c, String t, String img) {
         nome = n;
-        descricao = d;
+        descricaoCerta = c;
+        descricaoTorta = t;
+        imagem = img;
     }
 
-    public void setNome(String n) {
-        nome = n;
-    }
     public String getNome() {
         return nome;
     }
 
-    public void setDescricao(String d) {
-        descricao = d;
+    public String getDescricaoCerta() {
+        return descricaoCerta;
     }
-    public String getDescricao() {
-        return descricao;
+    public String getDescricaoTorta() {
+        return descricaoTorta;
+    }
+
+    public String getImagem() {
+        return imagem;
+    }
+
+    public void setDirecao() {
+        isTorta = (Math.random() < 0.5);
+    }
+    public boolean getDirecao() {
+        return isTorta;
     }
 
     @Override

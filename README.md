@@ -19,13 +19,14 @@ Desenho das cartas provisoriamente baseado no [tarô de Marselha](https://en.wik
     - botar no ar
 - Dados
     - usar um banco de dados (h2?), como uma pessoa normal faria
+    - usar json (Jackson?) pra criar os objetos Carta
 -Site
     - Estilos
     - Modo noturno
     - Grids
 - Leituras
-    - inverter as carta de vez em quando
     - leituras mais complexas
+    - ler só uma carta por dia
 - Cartas
     - desenhar cartas
         - as arcanas maiores

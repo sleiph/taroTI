@@ -6,7 +6,11 @@
 </head>
 <body>
     <p th:text="'Você tirou: ' + ${carta} + '!'"></p>
-    <img th:src="'img/' + ${carta} + '.png'" />
-    <p th:text="${carta.getDescricao()}"></p>
+    <img th:src="'img/' + ${carta.getImagem} + '.png'" th:style="'transform:rotate(' +
+        ${ (carta.getDirecao()) ? '0deg' : '180deg' }
+    + ');'" />
+    <p th:text="${
+        (carta.getDirecao()) ? carta.getDescricaoCerta() : carta.getDescricaoTorta()
+    }"></p>
 </body>
 </html>
