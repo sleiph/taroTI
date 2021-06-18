@@ -18,8 +18,8 @@ Desenho das cartas provisoriamente baseado no [tarô de Marselha](https://en.wik
 - Projeto
     - botar no ar
 - Dados
-    - usar um banco de dados (h2?), como uma pessoa normal faria
-    - usar json (Jackson?) pra criar os objetos Carta
+    - usar um banco de dados ([h2?](https://www.baeldung.com/spring-boot-h2-database)), como uma pessoa normal faria
+    - usar json ([Jackson?](https://www.baeldung.com/jackson-object-mapper-tutorial)) pra criar os objetos Carta
 -Site
     - Estilos
     - Modo noturno

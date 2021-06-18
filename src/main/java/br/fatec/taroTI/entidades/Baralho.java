@@ -6,6 +6,7 @@ public class Baralho {
     private Carta[] cartas = {
             new Carta("Tolo", "Vai fundo, cara", "Tu tá de meninagem", "tolo"),
             new Carta("Mago", "O pai tá on", "Temos um Xerox Rolmes", "mago"),
+            new Carta("Hierofante", "Embrace tradition", "Reject modernity", "hierofante"),
             new Carta("Morte", "aí fudeu", "aí fudeu", "morte"),
             new Carta("Às de Paus", "tá criando várias paradas", "Relaxa aí ô Artistão", "asdepaus"),
             new Carta("IX de Paus", "Depressão", "Depressão pra caralho", "ixdepaus")
