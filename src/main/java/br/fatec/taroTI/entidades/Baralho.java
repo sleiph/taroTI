@@ -10,9 +10,10 @@ public class Baralho {
             new Carta("Os enamorados", "Ai que fofo, gente! O casal!", "Gado d+", "maior/06enamorados"),
             new Carta("Morte", "Aí fudeu!", "Aí fudeu...", "maior/13morte"),
             new Carta("Sol", "Vitória da razão.", "É muito Sol na cabeça...", "maior/19sol"),
-            new Carta("Dois de Ouros", "Tá no corre.", "Dá seus pulo, cara.", "ouros/02"),
+            new Carta("II de Ouros", "Tá no corre.", "Dá seus pulo, cara.", "ouros/02"),
             new Carta("Às de Paus", "Tá criando várias paradas.", "Relaxa aí ô Artistão.", "paus/01"),
-            new Carta("IX de Paus", "Depressão.", "Depressão pra caralho!", "paus/09")
+            new Carta("IX de Paus", "Depressão.", "Depressão pra caralho!", "paus/09"),
+            new Carta("II de Copos", "Vai achar alguém.", "Vai perder alguém", "copos/02")
     };
 
     public Baralho() {
