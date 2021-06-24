@@ -4,14 +4,15 @@ import java.util.Random;
 
 public class Baralho {
     private Carta[] cartas = {
-            new Carta("Tolo", "Vai fundo, cara", "Tu tá de meninagem", "tolo"),
-            new Carta("Mago", "O pai tá on", "Temos um Xerox Rolmes", "mago"),
-            new Carta("Hierofante", "Embrace tradition", "Reject modernity", "hierofante"),
-            new Carta("Os enamorados", "Ai que fofo, gente! O casal!", "Gado d+", "enamorados"),
-            new Carta("Morte", "aí fudeu", "aí fudeu", "morte"),
-            new Carta("Sol", "Vitória da razão.", "É muito Sol na cabeça...", "sol"),
-            new Carta("Às de Paus", "tá criando várias paradas", "Relaxa aí ô Artistão", "asdepaus"),
-            new Carta("IX de Paus", "Depressão", "Depressão pra caralho", "ixdepaus")
+            new Carta("Tolo", "Vai fundo, cara.", "Tu tá de meninagem!", "maior/00tolo"),
+            new Carta("Mago", "O pai tá on!", "Temos um Xerox Rolmes.", "maior/01mago"),
+            new Carta("Hierofante", "Embrace tradition.", "Reject modernity.", "maior/05hierofante"),
+            new Carta("Os enamorados", "Ai que fofo, gente! O casal!", "Gado d+", "maior/06enamorados"),
+            new Carta("Morte", "Aí fudeu!", "Aí fudeu...", "maior/13morte"),
+            new Carta("Sol", "Vitória da razão.", "É muito Sol na cabeça...", "maior/19sol"),
+            new Carta("Dois de Ouros", "Tá no corre.", "Dá seus pulo, cara.", "ouros/02"),
+            new Carta("Às de Paus", "Tá criando várias paradas.", "Relaxa aí ô Artistão.", "paus/01"),
+            new Carta("IX de Paus", "Depressão.", "Depressão pra caralho!", "paus/09")
     };
 
     public Baralho() {
