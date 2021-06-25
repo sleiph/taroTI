@@ -2,7 +2,8 @@
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8" http-equiv="Content-Type">
-    <title>TaroTI</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title th:text="'TaroTI - ' + ${carta}"></title>
 </head>
 <body>
     <p th:text="'Você tirou: ' + ${carta} + '!'"></p>

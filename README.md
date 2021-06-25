@@ -4,6 +4,8 @@ Quando o Spring Web decide ir vender miçangas na praia. Um aplicativo que insta
 
 ![tolo](/src/main/resources/static/img/maior/00tolo.png)
 
+Contra todas as espectativas o app está online e já pode ser testado [nesse endereço](https://taroti.herokuapp.com).
+
 `mvnw spring-boot:run`
 
 O projeto usa as dependências Spring Web, Thymeleaf e Spring Boot DevTools e sua verdadeira razão de existir é pra que eu possa estudar a [arquitetura MVC](https://pt.wikipedia.org/wiki/MVC).
