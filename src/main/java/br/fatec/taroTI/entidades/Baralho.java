@@ -8,6 +8,7 @@ public class Baralho {
             new Carta("Mago", "O pai tá on!", "Temos um Xerox Rolmes.", "maior/01mago"),
             new Carta("Hierofante", "Embrace tradition.", "Reject modernity.", "maior/05hierofante"),
             new Carta("Os enamorados", "Ai que fofo, gente! O casal!", "Gado d+", "maior/06enamorados"),
+            new Carta("O Enforcado", "Abstrai...", "Abstraiu demais.", "maior/12enforcado"),
             new Carta("Morte", "Aí fudeu!", "Aí fudeu...", "maior/13morte"),
             new Carta("Sol", "Vitória da razão.", "É muito Sol na cabeça...", "maior/19sol"),
             new Carta("II de Ouros", "Tá no corre.", "Dá seus pulo, cara.", "ouros/02"),
