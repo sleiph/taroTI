@@ -14,7 +14,8 @@ public class Baralho {
             new Carta("II de Ouros", "Tá no corre.", "Dá seus pulo, cara.", "ouros/02"),
             new Carta("Às de Paus", "Tá criando várias paradas.", "Relaxa aí ô Artistão.", "paus/01"),
             new Carta("IX de Paus", "Depressão.", "Depressão pra caralho!", "paus/09"),
-            new Carta("II de Copos", "Vai achar alguém.", "Vai perder alguém", "copos/02")
+            new Carta("Às de Copos", "Vai começar o amor.", "Vai começar de cafonice.", "copos/01"),
+            new Carta("II de Copos", "Vai achar alguém.", "Vai perder alguém.", "copos/02")
     };
 
     public Baralho() {
