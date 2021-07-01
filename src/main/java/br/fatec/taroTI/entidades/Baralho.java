@@ -11,13 +11,30 @@ public class Baralho {
             new Carta("O Enforcado", "Abstrai...", "Abstraiu demais.", "maior/12enforcado"),
             new Carta("Morte", "Aí fudeu!", "Aí fudeu...", "maior/13morte"),
             new Carta("Sol", "Vitória da razão.", "É muito Sol na cabeça...", "maior/19sol"),
+
             new Carta("II de Ouros", "Tá no corre.", "Dá seus pulo, cara.", "ouros/02"),
+
             new Carta("Às de Paus", "Tá criando várias paradas.", "Relaxa aí ô Artistão.", "paus/01"),
             new Carta("IX de Paus", "Depressão.", "Depressão pra caralho!", "paus/09"),
+
             new Carta("Às de Copos", "Vai começar o amor.", "Vai começar de cafonice.", "copos/01"),
             new Carta("II de Copos", "Vai achar alguém.", "Vai perder alguém.", "copos/02"),
-            new Carta("VII de Copos", "Parece que vai dar tudo certo. Parece...", "Investiu em bitcoin?", "copos/07"),
-            new Carta("VII de Espadas", "Tem que manter isso aí!", "Vai perder tudo que ganhou.", "espadas/07")
+            new Carta("VII de Copos",
+                    "Parece que vai dar tudo certo. Parece...",
+                    "Investiu em bitcoin?",
+                    "copos/07"
+            ),
+            new Carta("Rei de Copos",
+                    "Manja das emoções.",
+                    "Tá viajando demais nas emoções.",
+                    "copos/14"
+            ),
+
+            new Carta("VII de Espadas",
+                    "Tem que manter isso aí!",
+                    "Vai perder tudo que ganhou.",
+                    "espadas/07"
+            )
     };
 
     public Baralho() {
