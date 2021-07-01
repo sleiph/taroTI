@@ -16,7 +16,8 @@ public class Baralho {
             new Carta("IX de Paus", "Depressão.", "Depressão pra caralho!", "paus/09"),
             new Carta("Às de Copos", "Vai começar o amor.", "Vai começar de cafonice.", "copos/01"),
             new Carta("II de Copos", "Vai achar alguém.", "Vai perder alguém.", "copos/02"),
-            new Carta("VII de Copos", "Parece que vai dar tudo certo. Parece...", "Investiu em bitcoin?", "copos/07")
+            new Carta("VII de Copos", "Parece que vai dar tudo certo. Parece...", "Investiu em bitcoin?", "copos/07"),
+            new Carta("VII de Espadas", "Tem que manter isso aí!", "Vai perder tudo que ganhou.", "espadas/07")
     };
 
     public Baralho() {
