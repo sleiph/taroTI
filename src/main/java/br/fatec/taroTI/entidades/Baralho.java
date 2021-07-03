@@ -34,6 +34,11 @@ public class Baralho {
                     "Tem que manter isso aí!",
                     "Vai perder tudo que ganhou.",
                     "espadas/07"
+            ),
+            new Carta("Cavaleiro de Espadas",
+                    "Tá playboy",
+                    "Foco jovem, foco!",
+                    "espadas/12"
             )
     };
 
