@@ -3,7 +3,7 @@ package br.fatec.taroTI.entidades;
 import java.util.Random;
 
 public class Baralho {
-    private Carta[] cartas = {
+    private final Carta[] cartas = {
             new Carta("Tolo", "Vai fundo, cara.", "Tu tá de meninagem!", "maior/00tolo"),
             new Carta("Mago", "O pai tá on!", "Temos um Xerox Rolmes.", "maior/01mago"),
             new Carta("Hierofante", "Embrace tradition.", "Reject modernity.", "maior/05hierofante"),
@@ -13,6 +13,11 @@ public class Baralho {
             new Carta("Sol", "Vitória da razão.", "É muito Sol na cabeça...", "maior/19sol"),
 
             new Carta("II de Ouros", "Tá no corre.", "Dá seus pulo, cara.", "ouros/02"),
+            new Carta("VI de Ouros",
+                    "Não tem vergonha em pedir ajuda.",
+                    "Tem que ajudar os outros também, ô vacilaum.",
+                    "ouros/06"
+            ),
 
             new Carta("Às de Paus", "Tá criando várias paradas.", "Relaxa aí ô Artistão.", "paus/01"),
             new Carta("IX de Paus", "Depressão.", "Depressão pra caralho!", "paus/09"),
