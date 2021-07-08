@@ -18,6 +18,11 @@ public class Baralho {
                     "Tem que ajudar os outros também, ô vacilaum.",
                     "ouros/06"
             ),
+            new Carta("Valete de Ouros",
+                    "Tá fazendo meninagem com o seu dinheiro! Continue.",
+                    "Tá fazendo meninagem com o seu dinheiro! Pare.",
+                    "ouros/11"
+            ),
 
             new Carta("Às de Paus", "Tá criando várias paradas.", "Relaxa aí ô Artistão.", "paus/01"),
             new Carta("IX de Paus", "Depressão.", "Depressão pra caralho!", "paus/09"),
