@@ -1,6 +1,8 @@
 # TaroTI 👁‍🗨
 
-Quando o Spring Web decide ir vender miçangas na praia. Um aplicativo que instancia uma carta de tarot cada vez que é acessado.
+*Quando o Spring Web decide ir vender miçangas na praia.*
+
+Um aplicativo que instancia uma carta de tarot cada vez que é acessado.
 
 ![tolo](/src/main/resources/static/img/maior/00tolo.png)
 

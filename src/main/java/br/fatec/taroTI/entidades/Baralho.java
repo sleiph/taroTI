@@ -16,40 +16,38 @@ public class Baralho {
             new Carta("VI de Ouros",
                     "Não tem vergonha em pedir ajuda.",
                     "Tem que ajudar os outros também, ô vacilaum.",
-                    "ouros/06"
-            ),
+                    "ouros/06"),
             new Carta("Valete de Ouros",
                     "Tá fazendo meninagem com o seu dinheiro! Continue.",
                     "Tá fazendo meninagem com o seu dinheiro! Pare.",
-                    "ouros/11"
-            ),
+                    "ouros/11"),
 
             new Carta("Às de Paus", "Tá criando várias paradas.", "Relaxa aí ô Artistão.", "paus/01"),
             new Carta("IX de Paus", "Depressão.", "Depressão pra caralho!", "paus/09"),
+            new Carta("X de Paus",
+                    "Pode delegar q tá tranquilo.",
+                    "Deixa os outros fazerem também, ô fominha.",
+                    "paus/10"),
 
             new Carta("Às de Copos", "Vai começar o amor.", "Vai começar de cafonice.", "copos/01"),
             new Carta("II de Copos", "Vai achar alguém.", "Vai perder alguém.", "copos/02"),
             new Carta("VII de Copos",
                     "Parece que vai dar tudo certo. Parece...",
                     "Investiu em bitcoin?",
-                    "copos/07"
-            ),
+                    "copos/07"),
             new Carta("Rei de Copos",
                     "Manja das emoções.",
                     "Tá viajando demais nas emoções.",
-                    "copos/14"
-            ),
+                    "copos/14"),
 
             new Carta("VII de Espadas",
                     "Tem que manter isso aí!",
                     "Vai perder tudo que ganhou.",
-                    "espadas/07"
-            ),
+                    "espadas/07"),
             new Carta("Cavaleiro de Espadas",
                     "Tá playboy",
                     "Foco jovem, foco!",
-                    "espadas/12"
-            )
+                    "espadas/12")
     };
 
     public Baralho() {
