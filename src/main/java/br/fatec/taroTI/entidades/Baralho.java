@@ -68,7 +68,11 @@ public class Baralho {
             new Carta("Cavaleiro de Espadas",
                     "Tá playboy",
                     "Foco jovem, foco!",
-                    "espadas/12")
+                    "espadas/12"),
+            new Carta("Rainha de Espadas",
+                    "Slay it, quinn",
+                    "Calma, porra! Calma, caralho!",
+                    "espadas/13")
     };
 
     public Baralho() {
