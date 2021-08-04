@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8" http-equiv="Content-Type">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+
     <title th:text="'TaroTI - ' + ${carta}"></title>
+
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <p th:text="'Você tirou: ' + ${carta} + '!'"></p>
-    <img th:src="'img/' + ${carta.getImagem} + '.png'" th:style="'transform:rotate(' +
-        ${ (carta.getDirecao()) ? '0deg' : '180deg' }
-    + ');'" />
-    <p th:text="${
-        (carta.getDirecao()) ? carta.getDescricaoCerta() : carta.getDescricaoTorta()
-    }"></p>
+    <div class="header">
+        <h2 th:text="${carta}"></h2>
+    </div>
+
+    <div class="corpo">
+        <img th:src="'img/' + ${carta.imagem} + '.png'" th:style="'transform:rotate(' +
+            ${ (carta.isTorta) ? '0deg' : '180deg' }
+        + ');'" />
+        <p th:text="${
+            (carta.isTorta) ? carta.descricaoCerta : carta.descricaoTorta
+        }"></p>
+    </div>
 </body>
 </html>

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&display=swap');
+
+html,body
+{
+    height:100%;
+    width:100%;
+}
+body
+{
+    margin: 0;
+    display: table;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.header h2 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.corpo img {
+    width: 100%;
+    height: calc(100vh - 176px);
+    object-fit: contain;
+}
+.corpo p {
+    padding-left: 24px;
+    padding-right: 24px;
+}

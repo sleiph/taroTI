@@ -6,6 +6,10 @@ public class Baralho {
     private final Carta[] cartas = {
             new Carta("Tolo", "Vai fundo, cara.", "Tu tá de meninagem!", "maior/00tolo"),
             new Carta("Mago", "O pai tá on!", "Temos um Xerox Rolmes.", "maior/01mago"),
+            new Carta("Imperatriz",
+                    "A mãe tá on!",
+                    "Tá na hora de aprender a ir no banheiro sozinho.",
+                    "maior/03imperatriz"),
             new Carta("Hierofante",
                     "Embrace tradition.",
                     "Reject modernity.",
@@ -81,7 +85,8 @@ public class Baralho {
 
     public Carta getLeitura() {
         int i = new Random().nextInt(cartas.length);
-        cartas[i].setDirecao();
-        return cartas[i];
+        Carta temp = cartas[i];
+        temp.setDirecao();
+        return temp;
     }
 }
