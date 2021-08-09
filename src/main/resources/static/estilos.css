@@ -18,11 +18,16 @@ body
 }
 
 .corpo img {
-    width: 100%;
     height: calc(100vh - 176px);
     object-fit: contain;
 }
-.corpo p {
+.corpo {
     padding-left: 24px;
     padding-right: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .corpo img {
+    width: 100%
+  }
 }
