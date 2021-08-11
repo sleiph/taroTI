@@ -56,6 +56,10 @@ public class Baralho {
 
             new Carta("Às de Copos", "Vai começar o amor.", "Vai começar de cafonice.", "copos/01"),
             new Carta("II de Copos", "Vai achar alguém.", "Vai perder alguém.", "copos/02"),
+            new Carta("V de Copos",
+                    "Perda",
+                    "Aceitação",
+                    "copos/05"),
             new Carta("VII de Copos",
                     "Parece que vai dar tudo certo. Parece...",
                     "Investiu em bitcoin?",
