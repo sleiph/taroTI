@@ -20,6 +20,11 @@ public class Baralho {
                     "maior/06enamorados"),
             new Carta("O Enforcado", "Abstrai...", "Abstraiu demais.", "maior/12enforcado"),
             new Carta("Morte", "Aí fudeu!", "Aí fudeu...", "maior/13morte"),
+            new Carta(
+                    "Temperança",
+                    "Suave.",
+                    "Esquece esse negócio de terceira via...",
+                    "maior/14temperanca"),
             new Carta("Sol", "Vitória da razão.", "É muito Sol na cabeça...", "maior/19sol"),
 
             new Carta("II de Ouros", "Tá no corre.", "Dá seus pulo, cara.", "ouros/02"),
