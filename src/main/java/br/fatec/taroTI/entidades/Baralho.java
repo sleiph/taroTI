@@ -18,6 +18,10 @@ public class Baralho {
                     "Ai que fofo, gente! O casal!",
                     "Gado d+",
                     "maior/06enamorados"),
+            new Carta("O carro",
+                    "Vai porra, continua, caralho, vai!",
+                    "Andando você tá, mas pra onde?",
+                    "maior/07carro"),
             new Carta("O Enforcado", "Abstrai...", "Abstraiu demais.", "maior/12enforcado"),
             new Carta("Morte", "Aí fudeu!", "Aí fudeu...", "maior/13morte"),
             new Carta(
