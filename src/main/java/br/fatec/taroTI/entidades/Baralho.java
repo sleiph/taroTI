@@ -52,6 +52,10 @@ public class Baralho {
                     "Tá fazendo meninagem com o seu dinheiro! Continue.",
                     "Tá fazendo meninagem com o seu dinheiro! Pare.",
                     "ouros/11"),
+            new Carta("Cavaleiro de Ouros",
+                    "Vai carpir um pasto q você ganha mais.",
+                    "Se cair de quatro não levanta mais.",
+                    "ouros/12"),
 
             new Carta("Às de Paus",
                     "Tá criando várias paradas.",
