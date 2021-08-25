@@ -26,6 +26,10 @@ public class Baralho {
                     "Vai porra, continua, caralho, vai!",
                     "Andando você tá, mas pra onde?",
                     "maior/07carro"),
+            new Carta("Justiça",
+                    "Tá certinho mano, vai na tua q tá tranquilo.",
+                    "Não tenho provas, mas tenho convicção.",
+                    "maior/08justica"),
             new Carta("O Enforcado", "Abstrai...", "Abstraiu demais.", "maior/12enforcado"),
             new Carta("Morte", "Aí fudeu!", "Aí fudeu...", "maior/13morte"),
             new Carta(
