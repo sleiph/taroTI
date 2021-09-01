@@ -131,9 +131,13 @@ public class Baralho {
                     "Foco jovem, foco!",
                     "espadas/12"),
             new Carta("Rainha de Espadas",
-                    "Slay it, quinn",
+                    "Slay it, quinn.",
                     "Calma, porra! Calma, caralho!",
-                    "espadas/13")
+                    "espadas/13"),
+            new Carta("Rei de Espadas",
+                    "O rei da porra.",
+                    "Para de pagar de cuzão.",
+                    "espadas/14")
     };
 
     public Baralho() {
