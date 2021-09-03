@@ -14,9 +14,8 @@
     </div>
 
     <div class="corpo">
-        <img th:src="'img/' + ${carta.imagem} + '.png'" th:style="'transform:rotate(' +
-            ${ (carta.isTorta) ? '0deg' : '180deg' }
-        + ');'" />
+        <img th:src="'img/' + ${carta.naipe.caminho} + ${#numbers.formatInteger(carta.valor,2)} + '.png'"
+             th:style="'transform:rotate(' + ${ (carta.isTorta) ? '0deg' : '180deg' } + ');'" />
         <p th:text="${
             (carta.isTorta) ? carta.descricaoCerta : carta.descricaoTorta
         }"></p>

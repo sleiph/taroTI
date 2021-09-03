@@ -4,7 +4,7 @@
 
 Um aplicativo que instancia uma carta de tarot cada vez que é acessado.
 
-![tolo](/src/main/resources/static/img/maior/00tolo.png)
+![tolo](/static/img/maior/00.png)
 
 Contra todas as espectativas o app está online e já pode ser testado [nesse endereço](https://taroti.herokuapp.com).
 
@@ -32,6 +32,8 @@ Desenho das cartas provisoriamente baseado no [tarô de Marselha](https://pt.wik
     - leituras mais complexas
     - ler só uma carta por dia
 - Cartas
+    - classes diferentes pra arcanas maiores e menores
+    - nome automático pras cartas dependendo do valor
     - desenhar cartas
         - as arcanas maiores
         - espadas

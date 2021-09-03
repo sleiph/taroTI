@@ -4,16 +4,18 @@ import java.util.Random;
 
 public class Carta {
     public String nome;
+    public int valor;
+    public Naipe naipe;
     public String descricaoCerta;
     public String descricaoTorta;
-    public String imagem;
     public boolean isTorta;
 
-    Carta(String n, String c, String t, String img) {
-        nome = n;
+    Carta(String nome, int v, int n, String c, String t) {
+        this.nome = nome;
+        valor = v;
+        naipe = new Naipe(n);
         descricaoCerta = c;
         descricaoTorta = t;
-        imagem = img;
     }
 
     public void setDirecao() {
@@ -22,6 +24,6 @@ public class Carta {
 
     @Override
     public String toString() {
-        return nome;
+        return nome + " de " + naipe;
     }
 }
