@@ -5,29 +5,41 @@ html,body
     height:100%;
     width:100%;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body
 {
-    margin: 0;
-    display: table;
+    background: #171717;
+    color: white;
     font-family: 'JetBrains Mono', monospace;
-}
-
-.header h2 {
     padding-left: 24px;
     padding-right: 24px;
 }
 
+.header {
+    height: 10vh;
+}
+.header h2 {
+    padding-top: 24px;
+}
+
+.corpo {
+
+}
 .corpo img {
-    height: calc(100vh - 176px);
+    height: 76vh;
     object-fit: contain;
 }
-.corpo {
-    padding-left: 24px;
-    padding-right: 24px;
+.corpo p {
+    height: 12vh;
+    padding-top: 24px;
 }
 
 @media only screen and (max-width: 768px) {
   .corpo img {
-    width: 100%
+    width: 100%;
   }
 }

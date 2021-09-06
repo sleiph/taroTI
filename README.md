@@ -4,7 +4,7 @@
 
 Um aplicativo que instancia uma carta de tarot cada vez que é acessado.
 
-![tolo](/static/img/maior/00.png)
+![tolo](/main/src/main/resources/static/img/maior/00.png)
 
 Contra todas as espectativas o app está online e já pode ser testado [nesse endereço](https://taroti.herokuapp.com).
 
@@ -19,13 +19,10 @@ Comecei o projeto com base [nesse tuturial](https://spring.io/guides/gs/serving-
 Desenho das cartas provisoriamente baseado no [tarô de Marselha](https://pt.wikipedia.org/wiki/Tar%C3%B4_de_Marselha)
 
 ## Fazer:
-- Projeto
-    - botar no ar
 - Dados
     - usar um banco de dados ([h2?](https://www.baeldung.com/spring-boot-h2-database)), como uma pessoa normal faria
     - usar json ([Jackson?](https://www.baeldung.com/jackson-object-mapper-tutorial)) pra criar os objetos Carta
 - Site
-    - Estilos
     - Modo noturno
     - Grids
 - Leituras
