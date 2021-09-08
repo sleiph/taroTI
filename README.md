@@ -4,7 +4,7 @@
 
 Um aplicativo que instancia uma carta de tarot cada vez que é acessado.
 
-![tolo](/main/src/main/resources/static/img/maior/00.png)
+![tolo](/src/main/resources/static/img/maior/00.png)
 
 Contra todas as espectativas o app está online e já pode ser testado [nesse endereço](https://taroti.herokuapp.com).
 

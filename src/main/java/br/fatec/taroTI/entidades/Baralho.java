@@ -50,7 +50,7 @@ public class Baralho {
                 }
             ),
             new Naipe(
-                "Backend",
+                "Dados",
                 "ouros/",
                 new Carta[] {
                     new Carta("II", 2,
@@ -131,7 +131,7 @@ public class Baralho {
                     }
             ),
             new Naipe(
-                    "Data Science",
+                    "Backend",
                     "espadas/",
                     new Carta[] {
                             new Carta("III",3,
