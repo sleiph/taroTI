@@ -73,7 +73,10 @@ public class Baralho {
                         "Tá fazendo meninagem com o seu dinheiro! Pare."),
                     new Carta("Júnior", 12,
                         "Vai carpir um pasto q você ganha mais.",
-                        "Se cair de quatro não levanta mais.")
+                        "Se cair de quatro não levanta mais."),
+                    new Carta("Pleno", 13,
+                        "Rainha do home-office.",
+                        "O trabalho tá feito, mas a louça tá lavada?")
                 }
             ),
             new Naipe(
