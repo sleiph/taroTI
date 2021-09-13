@@ -22,6 +22,7 @@ Desenho das cartas provisoriamente baseado no [tarô de Marselha](https://pt.wik
 - Dados
     - usar um banco de dados ([h2?](https://www.baeldung.com/spring-boot-h2-database)), como uma pessoa normal faria
     - usar json ([Jackson?](https://www.baeldung.com/jackson-object-mapper-tutorial)) pra criar os objetos Carta
+    - rotear cada carta pra um endereço, como um backend de verdade faria
 - Site
     - Modo noturno
     - Grids
@@ -31,6 +32,7 @@ Desenho das cartas provisoriamente baseado no [tarô de Marselha](https://pt.wik
 - Cartas
     - classes diferentes pra arcanas maiores e menores
     - nome automático pras cartas dependendo do valor
+- Arte      
     - desenhar cartas
         - as arcanas maiores
         - espadas
