@@ -4,19 +4,25 @@
 
 Um aplicativo que instancia uma carta de tarot cada vez que é acessado.
 
-![mago](/src/main/resources/static/img/maior/01.png)
-
 Contra todas as espectativas o app está online e já pode ser testado [nesse endereço](https://taroti.herokuapp.com).
 
-`mvnw spring-boot:run`
-
-O projeto usa as dependências Spring Web, Thymeleaf e Spring Boot DevTools e sua verdadeira razão de existir é pra que eu possa estudar a [arquitetura MVC](https://pt.wikipedia.org/wiki/MVC).
-
-`http://localhost:8080`
+O projeto usa as dependências Spring Web, Thymeleaf e Spring Boot DevTools e sua verdadeira razão de existir é pra eu poder estudar a [arquitetura MVC](https://pt.wikipedia.org/wiki/MVC).
 
 Comecei o projeto com base [nesse tuturial](https://spring.io/guides/gs/serving-web-content) e meio que estou improvisando desde então.
 
+## Comandos
+
+```shell
+mvnw spring-boot:run
+```
+
+Pra rodar o servidor, que fica online na [porta 8080](http://localhost:8080).
+
+## Cartas
+
 Desenho das cartas provisoriamente baseado no [tarô de Marselha](https://pt.wikipedia.org/wiki/Tar%C3%B4_de_Marselha)
+
+![mago](/src/main/resources/static/img/maior/01.png)
 
 ## Fazer:
 - Dados
