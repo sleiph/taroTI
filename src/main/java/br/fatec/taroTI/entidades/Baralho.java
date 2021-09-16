@@ -3,7 +3,7 @@ package br.fatec.taroTI.entidades;
 import java.util.Random;
 
 public class Baralho {
-    private Naipe[] naipes;
+    public Naipe[] naipes;
 
     public Baralho() {
         naipes = new Naipe[] {
@@ -172,12 +172,4 @@ public class Baralho {
         };
     }
 
-    public Carta getLeitura() {
-        Naipe n = naipes[new Random().nextInt(naipes.length)];
-        Carta temp = n.cartas[new Random().nextInt(n.cartas.length)];
-        temp.nome = temp.nome + " de " + n;
-        temp.caminho = n.caminho + String.format("%02d", temp.valor);
-        temp.setDirecao();
-        return temp;
-    }
 }

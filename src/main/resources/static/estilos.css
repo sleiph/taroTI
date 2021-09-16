@@ -38,6 +38,10 @@ body
     padding-top: 24px;
 }
 
+.corpo a {
+    color: white;
+}
+
 @media only screen and (max-width: 768px) {
   .corpo img {
     width: 100%;

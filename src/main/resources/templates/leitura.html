@@ -10,14 +10,14 @@
 </head>
 <body>
     <div class="header">
-        <h2 th:text="${carta}"></h2>
+        <h2 th:text="${nome}"></h2>
     </div>
 
     <div class="corpo">
-        <img th:src="'img/' + ${carta.caminho} + '.png'"
-             th:style="'transform:rotate(' + ${ (carta.isTorta) ? '0deg' : '180deg' } + ');'" />
+        <img th:src="'img/' + ${caminho} + '.png'"
+             th:style="'transform:rotate(' + ${ (sentido == 'cima') ? '0deg' : '180deg' } + ');'" />
         <p th:text="${
-            (carta.isTorta) ? carta.descricaoCerta : carta.descricaoTorta
+            (sentido == 'cima') ? carta.descricaoCerta : carta.descricaoTorta
         }"></p>
     </div>
 </body>

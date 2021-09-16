@@ -6,6 +6,11 @@ Um aplicativo que instancia uma carta de tarot cada vez que é acessado.
 
 Contra todas as espectativas o app está online e já pode ser testado [nesse endereço](https://taroti.herokuapp.com).
 
+Pra ver alguma carta específica é só trocar os valores no endereço da leitura:
+- O valor do naipe 0 é a arcana maior e de 1 a 4 as menores 
+- O valor das cartas, espero, vai de 0 a 21 pra arcana maior e de 0 a 14 pras menores, isso quando eu acabar de desenhar tudo.
+- O valor do sentido pode ser "cima", pra carta ser exibida de pé, ou qualquer outra coisa que você quiser, pra ser exibida invertida.
+
 O projeto usa as dependências Spring Web, Thymeleaf e Spring Boot DevTools e sua verdadeira razão de existir é pra eu poder estudar a [arquitetura MVC](https://pt.wikipedia.org/wiki/MVC).
 
 Comecei o projeto com base [nesse tuturial](https://spring.io/guides/gs/serving-web-content) e meio que estou improvisando desde então.
@@ -28,7 +33,6 @@ Desenho das cartas provisoriamente baseado no [tarô de Marselha](https://pt.wik
 - Dados
     - usar um banco de dados ([h2?](https://www.baeldung.com/spring-boot-h2-database)), como uma pessoa normal faria
     - usar json ([Jackson?](https://www.baeldung.com/jackson-object-mapper-tutorial)) pra criar os objetos Carta
-    - rotear cada carta pra um endereço, como um backend de verdade faria
 - Site
     - Modo noturno
     - Grids

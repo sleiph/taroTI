@@ -15,4 +15,5 @@ public class Naipe {
     public String toString() {
         return nome;
     }
+
 }
