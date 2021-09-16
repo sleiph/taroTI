@@ -103,7 +103,10 @@ public class Baralho {
                             "Depressão pra caralho!"),
                         new Carta("X",10,
                             "Pode delegar q tá tranquilo.",
-                            "Deixa os outros fazerem também, ô fominha.")
+                            "Deixa os outros fazerem também, ô fominha."),
+                        new Carta("X",12,
+                            "Lembra daquela ideia que vc teve pra uma startup? Gênio!",
+                            "Lembra daquela ideia que vc teve pra uma startup? Jênio...")
                     }
             ),
             new Naipe(
