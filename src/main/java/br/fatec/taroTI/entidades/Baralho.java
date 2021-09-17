@@ -1,7 +1,5 @@
 package br.fatec.taroTI.entidades;
 
-import java.util.Random;
-
 public class Baralho {
     public Naipe[] naipes;
 
@@ -47,6 +45,12 @@ public class Baralho {
                     new Carta("Temperança", 14,
                         "Suave.",
                         "Esquece esse negócio de terceira via..."),
+                    new Carta(
+                        "Demônio",
+                        15,
+                        "O trabalho é só uma desculpa pra happy-hour poder existir.",
+                        "Acho q tá na hora de largar o Tibia."
+                    ),
                     new Carta("Sol", 19,
                         "Vitória da razão.",
                         "É muito Sol na cabeça...")
@@ -104,7 +108,7 @@ public class Baralho {
                         new Carta("X",10,
                             "Pode delegar q tá tranquilo.",
                             "Deixa os outros fazerem também, ô fominha."),
-                        new Carta("X",12,
+                        new Carta("Júnior",12,
                             "Lembra daquela ideia que vc teve pra uma startup? Gênio!",
                             "Lembra daquela ideia que vc teve pra uma startup? Jênio...")
                     }
