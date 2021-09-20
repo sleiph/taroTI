@@ -150,6 +150,9 @@ public class Baralho {
                     "Backend",
                     "espadas/",
                     new Carta[] {
+                            new Carta("I",1,
+                                    "Tá na hora de aprender aquele framework q os jovens tão usando.",
+                                    "Quantos frameworks de javascript sairam hoje?"),
                             new Carta("III",3,
                                     "Solidão, rejeição, fossa ...",
                                     "Recuperação, aproveita o descanso."),
