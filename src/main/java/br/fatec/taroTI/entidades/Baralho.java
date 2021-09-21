@@ -110,7 +110,10 @@ public class Baralho {
                             "Deixa os outros fazerem também, ô fominha."),
                         new Carta("Júnior",12,
                             "Lembra daquela ideia que vc teve pra uma startup? Gênio!",
-                            "Lembra daquela ideia que vc teve pra uma startup? Jênio...")
+                            "Lembra daquela ideia que vc teve pra uma startup? Jênio..."),
+                        new Carta("Sênior",14,
+                            "Steve Jobs.",
+                            "Bill Gates.")
                     }
             ),
             new Naipe(
