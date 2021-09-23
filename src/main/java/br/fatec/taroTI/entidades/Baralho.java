@@ -60,6 +60,9 @@ public class Baralho {
                 "Dados",
                 "ouros/",
                 new Carta[] {
+                    new Carta("Ás", 1,
+                        "Sabe o que é melhor que o seu salário atual? Um salário maior.",
+                        "Sabe o que justifica um aumento de salário? Mais dor de cabeça."),
                     new Carta("II", 2,
                         "Tá no corre.",
                         "Dá seus pulo, cara."),
