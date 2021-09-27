@@ -34,6 +34,7 @@ Desenho das cartas provisoriamente baseado no [tarô de Marselha](https://pt.wik
     - usar um banco de dados ([h2?](https://www.baeldung.com/spring-boot-h2-database)), como uma pessoa normal faria
     - usar json ([Jackson?](https://www.baeldung.com/jackson-object-mapper-tutorial)) pra criar os objetos Carta
 - Site
+    - criar uma página 404 e deixar indices errados irem pra lá
     - Modo noturno
     - Grids
     - Trocar as imagens por um svg

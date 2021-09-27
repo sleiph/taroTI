@@ -17,10 +17,11 @@ public class TaroTiController {
     public String home(
             Model model
     ) {
-        Baralho mybaralho = new Baralho();
-
-        int n = new Random().nextInt(mybaralho.naipes.length);
-        int c = new Random().nextInt(mybaralho.naipes[n].cartas.length);
+        int n = new Random().nextInt(5);
+        int c;
+        c = ((n==0) ?
+                new Random().nextInt(22) :
+                new Random().nextInt(15));
         String sentido = (new Random().nextInt(2)==1) ? "cima" : "baixo";
 
         model.addAttribute("naipe", n);
