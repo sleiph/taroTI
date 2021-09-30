@@ -73,8 +73,8 @@ public class Baralho {
                         "Vitória da razão.",
                         "É muito Sol na cabeça..."),
                     new Carta("Julgamento", 20,
-                        "",
-                        ""),
+                        "Qual vai ser o seu legado? Provavelmente muito pouco... Bom dia.",
+                        "Qual vai ser o seu legado? Provavelmente nenhum! Boa noite."),
                     new Carta("Mundo", 21,
                         "",
                         "")
