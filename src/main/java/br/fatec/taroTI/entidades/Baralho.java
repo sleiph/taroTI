@@ -124,8 +124,8 @@ public class Baralho {
                         "Rainha do home-office.",
                         "O trabalho tá feito, mas a louça tá lavada?"),
                     new Carta("Sênior", 14,
-                        "",
-                        "")
+                        "Todo dia nasce um otário, você tá aqui pra provar isso.",
+                        "Relaxa cara, nem todo mundo quer te enganar, no máximo a maioria.")
                 }
             ),
             new Naipe(
