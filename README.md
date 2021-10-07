@@ -44,6 +44,7 @@ Desenho das cartas provisoriamente baseado no [tarô de Marselha](https://pt.wik
 - Cartas
     - classes diferentes pra arcanas maiores e menores
     - nome automático pras cartas dependendo do valor
+    - arrumar os indices das cartas, pra carta 02 ser a II e não a III
 - Arte
     - desenhar cartas
         - as arcanas maiores
