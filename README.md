@@ -34,17 +34,19 @@ Desenho das cartas provisoriamente baseado no [tarô de Marselha](https://pt.wik
     - usar um banco de dados ([h2?](https://www.baeldung.com/spring-boot-h2-database)), como uma pessoa normal faria
     - usar json ([Jackson?](https://www.baeldung.com/jackson-object-mapper-tutorial)) pra criar os objetos Carta
 - Site
+    - fazer o site ser um API, REST de preferência...
     - criar uma página 404 e deixar indices errados irem pra lá
     - Modo noturno
     - Grids
     - Trocar as imagens por um svg
+    - associar elementos html com as cartas, não só strings
 - Leituras
     - leituras mais complexas
     - ler só uma carta por dia
 - Cartas
     - classes diferentes pra arcanas maiores e menores
     - nome automático pras cartas dependendo do valor
-    - arrumar os indices das cartas, pra carta 02 ser a II e não a III
+    - arrumar o endereço dos naipes pros nomes deles e não números arbritrários
 - Arte
     - desenhar cartas
         - as arcanas maiores

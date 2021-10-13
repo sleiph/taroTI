@@ -53,14 +53,17 @@ public class TaroTiController {
         Baralho mybaralho = new Baralho();
         Naipe n;
         Carta c;
+        int iNaipe = Integer.parseInt(naipe),
+                iCarta = Integer.parseInt(carta);
 
         try {
-            n = mybaralho.naipes[Integer.parseInt(naipe)];
+            n = mybaralho.naipes[iNaipe];
         } catch(ArrayIndexOutOfBoundsException e) {
             n = mybaralho.naipes[0];
         }
         try {
-            c = n.cartas[Integer.parseInt(carta)];
+            iCarta -= (iNaipe != 0 ? 1 : 0);
+            c = n.cartas[iCarta];
         } catch(ArrayIndexOutOfBoundsException e) {
             c = n.cartas[0];
         }
