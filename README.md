@@ -33,6 +33,7 @@ Desenho das cartas provisoriamente baseado no [tarô de Marselha](https://pt.wik
 - Dados
     - usar um banco de dados ([h2?](https://www.baeldung.com/spring-boot-h2-database)), como uma pessoa normal faria
     - usar json ([Jackson?](https://www.baeldung.com/jackson-object-mapper-tutorial)) pra criar os objetos Carta
+    - usar o mongoDB em vez desses objetos
 - Site
     - fazer o site ser um API, REST de preferência...
     - criar uma página 404 e deixar indices errados irem pra lá
