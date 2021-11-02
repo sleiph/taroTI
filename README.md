@@ -38,6 +38,7 @@ Pra rodar o servidor, que fica online na [porta 8080](http://localhost:8080).
     - associar elementos html com as cartas, não só strings
     - relacionar as duas tabelas (naipe e carta)
     - arrumar o valor dos naipes pros nomes deles e não números arbritrários
+    - fazer as pazes entre Heroku e MongoDB ;-;
     
 - Site
     - criar uma página 404 e deixar indices errados irem pra lá
