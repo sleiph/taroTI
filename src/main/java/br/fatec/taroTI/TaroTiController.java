@@ -1,9 +1,10 @@
 package br.fatec.taroTI;
 
-import br.fatec.taroTI.entidades.Baralho;
-import br.fatec.taroTI.entidades.Naipe;
-import br.fatec.taroTI.entidades.Carta;
+import br.fatec.taroTI.modelos.Carta;
+import br.fatec.taroTI.modelos.Naipe;
+import br.fatec.taroTI.repositorios.*;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,15 +14,39 @@ import java.util.Random;
 
 @Controller
 public class TaroTiController {
+
+    @Autowired
+    NaipeRepo naipeRepositorio;
+
+    @Autowired
+    CartaRepo cartaRepositorio;
+
+    public Naipe getNaipeByIndice(String indice) {
+        Naipe myNaipe = naipeRepositorio.findNaipeByIndice(indice);
+        if (myNaipe==null)
+            myNaipe = naipeRepositorio.findNaipeByIndice("0");
+        return myNaipe;
+    }
+
+    public Carta getCartaByValorENaipe(String valor, Naipe naipe) {
+        Carta myCarta = cartaRepositorio.findCartaByValorENaipe(valor, naipe.indice);
+        if (myCarta==null)
+            myCarta = cartaRepositorio.findCartaByValorENaipe("1", naipe.indice);
+        return myCarta;
+    }
+
     @GetMapping("/")
     public String home(
             Model model
     ) {
-        int n = new Random().nextInt(5);
-        int c;
-        c = ((n==0) ?
-                new Random().nextInt(22) :
-                new Random().nextInt(15));
+        int n = new Random().nextInt(5),
+            c;
+
+        if (n==0)
+            c = new Random().nextInt(22);
+        else
+            c = (new Random().nextInt(14) + 1);
+
         String sentido = (new Random().nextInt(2)==1) ? "cima" : "baixo";
 
         model.addAttribute("naipe", n);
@@ -50,27 +75,16 @@ public class TaroTiController {
         ) String sentido,
         Model model
     ) {
-        Baralho mybaralho = new Baralho();
-        Naipe n;
-        Carta c;
+
         int iNaipe = Integer.parseInt(naipe),
-                iCarta = Integer.parseInt(carta);
+            iCarta = Integer.parseInt(carta);
 
-        try {
-            n = mybaralho.naipes[iNaipe];
-        } catch(ArrayIndexOutOfBoundsException e) {
-            n = mybaralho.naipes[0];
-        }
-        try {
-            iCarta -= (iNaipe != 0 ? 1 : 0);
-            c = n.cartas[iCarta];
-        } catch(ArrayIndexOutOfBoundsException e) {
-            c = n.cartas[0];
-        }
+        Naipe myNaipe = getNaipeByIndice(String.valueOf(iNaipe));
+        Carta myCarta = getCartaByValorENaipe( String.valueOf(iCarta), myNaipe );
 
-        model.addAttribute("nome", c + " de " + n);
-        model.addAttribute("carta", c);
-        model.addAttribute("caminho", n.caminho + String.format("%02d", c.valor));
+        model.addAttribute("nome", myCarta + " de " + myNaipe);
+        model.addAttribute("carta", myCarta);
+        model.addAttribute("caminho", myNaipe.caminho + String.format("%02d", myCarta.valor));
         model.addAttribute("sentido", sentido);
 
         return "leitura";
