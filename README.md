@@ -32,6 +32,9 @@ mvnw spring-boot:run
 Pra rodar o servidor, que fica online na [porta 8080](http://localhost:8080).
 
 ## Fazer:
+- Aplicativo
+    - usar vários environments
+    
 - Dados
     - criar uma API, REST de preferência
     - tabela pra arcanas maiores e menores
