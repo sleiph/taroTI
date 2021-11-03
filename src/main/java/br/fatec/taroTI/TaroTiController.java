@@ -18,10 +18,11 @@ public class TaroTiController {
             Model model
     ) {
         int n = new Random().nextInt(5);
-        int c;
-        c = ((n==0) ?
-                new Random().nextInt(22) :
-                new Random().nextInt(15));
+        int c = ( (n == 0) ?
+            new Random().nextInt(22)
+        :
+            (new Random().nextInt(14) + 1));
+
         String sentido = (new Random().nextInt(2)==1) ? "cima" : "baixo";
 
         model.addAttribute("naipe", n);
@@ -36,12 +37,12 @@ public class TaroTiController {
         @RequestParam(
             name="naipe",
             required=false,
-            defaultValue="00"
+            defaultValue="0"
         ) String naipe,
         @RequestParam(
             name="carta",
             required=false,
-            defaultValue="00"
+            defaultValue="1"
         ) String carta,
         @RequestParam(
                 name="sentido",
@@ -51,26 +52,29 @@ public class TaroTiController {
         Model model
     ) {
         Baralho mybaralho = new Baralho();
-        Naipe n;
-        Carta c;
+        Naipe myNaipe;
+        Carta myCarta;
         int iNaipe = Integer.parseInt(naipe),
-                iCarta = Integer.parseInt(carta);
+            iCarta = Integer.parseInt(carta);
 
         try {
-            n = mybaralho.naipes[iNaipe];
+            myNaipe = mybaralho.naipes[iNaipe];
         } catch(ArrayIndexOutOfBoundsException e) {
-            n = mybaralho.naipes[0];
+            myNaipe = mybaralho.naipes[0];
         }
         try {
-            iCarta -= (iNaipe != 0 ? 1 : 0);
-            c = n.cartas[iCarta];
+            myCarta = ( (iNaipe == 0) ?
+                myNaipe.cartas[iCarta]
+            :
+                myNaipe.cartas[iCarta-1]);
+
         } catch(ArrayIndexOutOfBoundsException e) {
-            c = n.cartas[0];
+            myCarta = myNaipe.cartas[0];
         }
 
-        model.addAttribute("nome", c + " de " + n);
-        model.addAttribute("carta", c);
-        model.addAttribute("caminho", n.caminho + String.format("%02d", c.valor));
+        model.addAttribute("nome", myCarta + " de " + myNaipe);
+        model.addAttribute("carta", myCarta);
+        model.addAttribute("caminho", myNaipe.caminho + String.format("%02d", myCarta.valor));
         model.addAttribute("sentido", sentido);
 
         return "leitura";

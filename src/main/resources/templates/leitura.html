@@ -4,7 +4,7 @@
     <meta charset="UTF-8" http-equiv="Content-Type">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <title th:text="'TaroTI - ' + ${carta}"></title>
+    <title th:text="'TaroTI - ' + ${nome}"></title>
 
     <link rel="stylesheet" href="estilos.css">
 </head>
@@ -14,7 +14,7 @@
     </div>
 
     <div class="corpo">
-        <img th:src="'img/' + ${caminho} + '.png'"
+        <img th:src="'https://raw.githubusercontent.com/sleiph/taroTI/main/src/main/resources/static/img/' + ${caminho} + '.png'"
              th:style="'transform:rotate(' + ${ (sentido == 'cima') ? '0deg' : '180deg' } + ');'" />
         <p th:text="${
             (sentido == 'cima') ? carta.descricaoCerta : carta.descricaoTorta
