@@ -37,28 +37,26 @@ Pra rodar o servidor, que fica online na [porta 8080](http://localhost:8080).
     
 - Dados
     - criar uma API, REST de preferência
+    - juntar tudo em uma tabela só, já que o mongo não é relacional
     - tabela pra arcanas maiores e menores
-    - associar elementos html com as cartas, não só strings
-    - relacionar as duas tabelas (naipe e carta)
-    - arrumar o valor dos naipes pros nomes deles e não números arbritrários
+    - arrumar o valor dos naipes pros nomes deles e não números
     - fazer as pazes entre Heroku e MongoDB ;-;
+
+- Negócio
+    - leituras mais complexas
+    - ler só uma carta por dia
     
+- Testes
+    - fazer testes...
+
 - Site
+    - associar elementos html com as cartas, não só strings
     - criar uma página 404 e deixar indices errados irem pra lá
     - Modo noturno
     - Trocar as imagens por svg
     
-- Leituras
-    - leituras mais complexas
-    - ler só uma carta por dia
-    
 - Arte
-    - desenhar cartas
-        - as arcanas maiores
-        - espadas
-        - copos
-        - bastões
-        - dinheiros
+    - desenhar cartas pixelart
     - relacionar as ilustrações com programação
 
 ## Licença
