@@ -37,8 +37,8 @@ Pra rodar o servidor, que fica online na [porta 8080](http://localhost:8080).
     
 - Dados
     - criar uma API, REST de preferência
+    - tabela pra arcanas maiores e menores ou:
     - juntar tudo em uma tabela só, já que o mongo não é relacional
-    - tabela pra arcanas maiores e menores
     - arrumar o valor dos naipes pros nomes deles e não números
     - fazer as pazes entre Heroku e MongoDB ;-;
 
@@ -52,12 +52,11 @@ Pra rodar o servidor, que fica online na [porta 8080](http://localhost:8080).
 - Site
     - associar elementos html com as cartas, não só strings
     - criar uma página 404 e deixar indices errados irem pra lá
-    - Modo noturno
     - Trocar as imagens por svg
+    - Modo noturno, um dia...
     
 - Arte
-    - desenhar cartas pixelart
-    - relacionar as ilustrações com programação
+    - criar ilustrações relacionadas a programação
 
 ## Licença
 
