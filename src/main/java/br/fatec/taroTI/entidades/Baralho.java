@@ -245,7 +245,7 @@ public class Baralho {
                                     "O júnior vai embora, pra uma empresa muito melhor. Você está feliz por ele, com certeza isso que você está sentindo não é inveja."),
                             new Carta("VI", 6,
                                     "Mudança pesada à frente.",
-                                    "Babagem pesada pra carregar."),
+                                    "Bagagem pesada pra carregar."),
                             new Carta("VII", 7,
                                     "Aquele monolitão que já tava lá quando você chegou vai estar lá quando você for embora.",
                                     "Boa notícia: A empresa resolveu se livrar do monolito que usava. Má notícia: Você que vai ter que fazer isso."),
