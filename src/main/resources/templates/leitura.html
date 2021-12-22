@@ -16,9 +16,11 @@
     <div class="corpo">
         <img th:src="'https://raw.githubusercontent.com/sleiph/taroTI/main/src/main/resources/static/img/' + ${caminho} + '.png'"
              th:style="'transform:rotate(' + ${ (sentido == 'cima') ? '0deg' : '180deg' } + ');'" />
-        <p th:text="${
-            (sentido == 'cima') ? carta.descricaoCerta : carta.descricaoTorta
-        }"></p>
+        <div class="mensagem">
+            <th:block th:utext="${
+                (sentido == 'cima') ? carta.descricaoCerta : carta.descricaoTorta
+            }"></th:block>
+        </div>
     </div>
 </body>
 </html>

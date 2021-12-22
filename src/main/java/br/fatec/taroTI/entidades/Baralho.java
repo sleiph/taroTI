@@ -229,47 +229,75 @@ public class Baralho {
                     "espadas/",
                     new Carta[] {
                             new Carta("I",1,
-                                    "Tá na hora de aprender aquele framework q os jovens tão usando.",
-                                    "Quantos frameworks de javascript sairam hoje?"),
+                                    "<h3>O salteador</h3>" +
+                                            "<p>Tá na hora de aprender aquele framework q os jovens tão usando.</p>",
+                                    "<h3>O salteador</h3>" +
+                                            "<p>Quantos frameworks de javascript sairam hoje?</p>"),
                             new Carta("II",2,
-                                    "Decisões difíceis.",
-                                    "Decisões impossíveis."),
+                                    "<h3>A escolha</h3>" +
+                                            "<p>Decisões difíceis.</p>",
+                                    "<h3>A escolha</h3>" +
+                                            "<p>Decisões impossíveis.</p>"),
                             new Carta("III",3,
-                                    "Solidão, rejeição, fossa ...",
-                                    "Recuperação, aproveita o descanso."),
+                                    "<h3>A ferida</h3>" +
+                                            "<p>Solidão, rejeição, fossa ...</p>",
+                                    "<h3>A ferida</h3>" +
+                                            "<p>Recuperação, aproveita o descanso.</p>"),
                             new Carta("IV", 4,
-                                    "Tá de férias, não abre o email.",
-                                    "Pra que você foi passar seu número pessoal pro chefe?"),
+                                    "<h3>A efígie</h3>\n" +
+                                            "<p><a href=\"https://pt.wikipedia.org/wiki/Docker_(software)\" >Docker</a></p>",
+                                    "<h3>A efígie</h3>\n" +
+                                            "<p>Pra que você foi passar seu número pessoal pro chefe?</p>"),
                             new Carta("V", 5,
-                                    "Então esse júnior novo acha que é melhor que você??? Deleta todos os middlewares que você escreveu pro projeto dele!1! Quero ver ele se virar!!!@!",
-                                    "O júnior vai embora, pra uma empresa muito melhor. Você está feliz por ele, com certeza isso que você está sentindo não é inveja."),
+                                    "<h3>O traidor</h3>\n" +
+                                            "<p>Então esse júnior novo acha que é melhor que você??? Deleta todos os middlewares que você escreveu pro projeto dele!1! Quero ver ele se virar!!!@!</p>",
+                                    "<h3>O traidor</h3>\n" +
+                                            "<p><a href=\"https://en.wikipedia.org/wiki/Traitor_tracing\">Traitor tracing</a></p>"),
                             new Carta("VI", 6,
-                                    "Mudança pesada à frente.",
-                                    "Bagagem pesada pra carregar."),
+                                    "<h3>O barqueiro</h3>\n" +
+                                            "<p>Mudança pesada à frente.</p>",
+                                    "<h3>O barqueiro</h3>\n" +
+                                            "<p>Bagagem pesada pra carregar.</p>"),
                             new Carta("VII", 7,
-                                    "Aquele monolitão que já tava lá quando você chegou vai estar lá quando você for embora.",
-                                    "Boa notícia: A empresa resolveu se livrar do monolito que usava. Má notícia: Você que vai ter que fazer isso."),
+                                    "<h3>O ladrão</h3>\n" +
+                                            "<p>Aquele monolitão que já tava lá quando você chegou vai estar lá quando você for embora.</p>",
+                                    "<h3>O ladrão</h3>\n" +
+                                            "<p><a href=\"https://www.devmedia.com.br/sql-injection/6102\" >SQL Injection</a></p>"),
                             new Carta("VIII", 8,
-                                    "A IDE que você passou tantos anos aprendendo vai ser aposentada.",
-                                    "Cobol? Fortran? Do que você tá falando, cara?"),
+                                    "<h3>O prisioneiro</h3>\n" +
+                                            "<p>A IDE que você passou tantos anos aprendendo vai ser aposentada.</p>",
+                                    "<h3>O prisioneiro</h3>\n" +
+                                            "<p>Cobol? Fortran? Do que você tá falando, cara?</p>"),
                             new Carta("IX", 9,
-                                    "Compilando...",
-                                    "Erro na compilação."),
+                                    "<h3>O pesadelo</h3>\n" +
+                                            "<p>Compilando...</p>",
+                                    "<h3>O pesadelo</h3>\n" +
+                                            "<p>Erro na compilação.</p>"),
                             new Carta("X", 10,
-                                    "Você já viu um desenvolvedor velho? O que será que acontece com eles? Oque vai acontecer com você???",
-                                    "Mais alguns anos e você tá aposentado... Mais alguns anos e adeus Java, adeus Kubernetes, adeus..."),
+                                    "<h3>O cadáver</h3>\n" +
+                                            "<p>Você já viu um desenvolvedor velho? O que será que acontece com eles? Oque vai acontecer com você???</p>",
+                                    "<h3>O cadáver</h3>\n" +
+                                            "<p>Mais alguns anos e você tá aposentado... Mais alguns anos e adeus Java, adeus Kubernetes, adeus...</p>"),
                             new Carta("Estagiário", 11,
-                                    "Vai na fé leske!",
-                                    "Deixa disso meu jovem mancebo."),
+                                    "<h3>O espião</h3>\n" +
+                                            "<p>Vai na fé leske!</p>",
+                                    "<h3>O espião</h3>\n" +
+                                            "<p>Deixa disso meu jovem mancebo.</p>"),
                             new Carta("Júnior", 12,
-                                    "Tá playboy",
-                                    "Foco jovem, foco!"),
+                                    "<h3>O berserker</h3>\n" +
+                                            "<p>Tá playboy</p>",
+                                    "<h3>O berserker</h3>\n" +
+                                            "<p>Foco jovem, foco!</p>"),
                             new Carta("Pleno", 13,
-                                    "Slay it, quinn.",
-                                    "Calma, porra! Calma, caralho!"),
+                                    "<h3>A viúva</h3>\n" +
+                                            "<p>Slay it, quinn.</p>",
+                                    "<h3>A viúva</h3>\n" +
+                                            "<p>Calma, porra! Calma, caralho!</p>"),
                             new Carta("Sênior", 14,
-                                    "O rei da porra.",
-                                    "Para de pagar de cuzão.")
+                                    "<h3>O senhor da guerra</h3>\n" +
+                                            "<p>O rei da porra.</p>",
+                                    "<h3>O senhor da guerra</h3>\n" +
+                                            "<p>Para de pagar de cuzão.</p>")
                     }
             )
         };
