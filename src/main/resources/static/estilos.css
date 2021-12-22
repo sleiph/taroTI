@@ -19,14 +19,16 @@ body {
 
 .header {
     height: 10vh;
+    display: inline-grid;
+    align-items: center;
 }
 .header h2 {
-    padding-top: 24px;
+
 }
 
 .corpo {
     height: 90vh;
-    overflow: scroll;
+    overflow: overlay;
 }
 
 .corpo img {
@@ -37,7 +39,9 @@ body {
     padding: 24px 0;
 }
 .corpo .mensagem h3 {
-    padding: 24px 0;
+    padding-bottom: 8px;
+    font-weight: 200;
+    font-style: italic;
 }
 
 .corpo a {

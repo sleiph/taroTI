@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <div class="corpo">
-      <p>Faça sua leitura clicando
-          <a href="/leitura" th:href="@{'/leitura?naipe=' + ${naipe} + '&carta=' + ${carta} + '&sentido=' + ${sentido}}">aqui</a>
-      </p>
-  </div>
+    <div class="header">
+        <h2>TaroTI</h2>
+    </div>
+
+    <div class="corpo">
+        <div class="mensagem">
+            <p>Faça sua leitura clicando
+                <a href="/leitura" th:href="@{'/leitura?naipe=' + ${naipe} + '&carta=' + ${carta} + '&sentido=' + ${sentido}}">aqui</a>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
