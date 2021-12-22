@@ -1,22 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&display=swap');
 
-html,body
-{
-    height:100%;
-    width:100%;
+html,body {
+    height:100vh;
+    width:100vw;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body
-{
+body {
     background: #171717;
     color: white;
     font-family: 'JetBrains Mono', monospace;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .header {
@@ -27,15 +25,19 @@ body
 }
 
 .corpo {
-
+    height: 90vh;
+    overflow: scroll;
 }
+
 .corpo img {
-    height: 76vh;
     object-fit: contain;
 }
-.corpo p {
-    height: 12vh;
-    padding-top: 24px;
+
+.corpo .mensagem {
+    padding: 24px 0;
+}
+.corpo .mensagem h3 {
+    padding: 24px 0;
 }
 
 .corpo a {

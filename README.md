@@ -50,7 +50,6 @@ Pra rodar o servidor, que fica online na [porta 8080](http://localhost:8080).
     - fazer testes...
 
 - Site
-    - associar elementos html com as cartas, não só strings
     - criar uma página 404 e deixar indices errados irem pra lá
     - Trocar as imagens por svg
     - Modo noturno, um dia...
