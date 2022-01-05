@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&display=swap');
 
-html,body {
-    height:100vh;
-    width:100vw;
+html {
+
+}
+body {
+
 }
 * {
     margin: 0;
@@ -13,8 +15,10 @@ body {
     background: #171717;
     color: white;
     font-family: 'JetBrains Mono', monospace;
-    padding-left: 5vw;
-    padding-right: 5vw;
+}
+main {
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .header {
@@ -28,7 +32,8 @@ body {
 
 .corpo {
     height: 90vh;
-    overflow: overlay;
+    overflow: revert;
+    line-height: 1.6;
 }
 
 .corpo img {
@@ -44,12 +49,16 @@ body {
     font-style: italic;
 }
 
+.corpo p {
+    padding-bottom: 6px;
+}
+
 .corpo a {
     color: white;
 }
 
 @media only screen and (max-width: 768px) {
   .corpo img {
-    width: 100%;
+
   }
 }
