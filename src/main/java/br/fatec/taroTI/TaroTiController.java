@@ -40,17 +40,16 @@ public class TaroTiController {
             Model model
     ) {
         int n = new Random().nextInt(5),
-            c;
+            menor, maior;
 
-        if (n==0)
-            c = new Random().nextInt(22);
-        else
-            c = (new Random().nextInt(14) + 1);
+        menor = (new Random().nextInt(14) + 1);
+        maior = new Random().nextInt(22);
 
         String sentido = (new Random().nextInt(2)==1) ? "cima" : "baixo";
 
         model.addAttribute("naipe", n);
-        model.addAttribute("carta", c);
+        model.addAttribute("menor", menor);
+        model.addAttribute("maior", maior);
         model.addAttribute("sentido", sentido);
 
         return "index";

@@ -6,6 +6,7 @@
 
     <title>TaroTI</title>
 
+    <link rel="icon" type="image/png" sizes="96x96" href="/icone.png">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
@@ -17,7 +18,10 @@
         <div class="corpo">
             <div class="mensagem">
                 <p>Faça sua leitura clicando
-                    <a href="/leitura" th:href="@{'/leitura?naipe=' + ${naipe} + '&carta=' + ${carta} + '&sentido=' + ${sentido}}">aqui</a>
+                    <a href="/leitura" th:href="@{'/leitura?naipe=' + ${naipe} + '&carta=' + ${(naipe > 0) ? menor : maior} + '&sentido=' + ${sentido}}">aqui</a>.
+                </p>
+                <p>Ou se você só liga pras arcanas maiores, clique
+                    <a href="/leitura" th:href="@{'/leitura?naipe=' + 0 + '&carta=' + ${maior} + '&sentido=' + ${sentido}}">aqui</a>.
                 </p>
             </div>
         </div>
