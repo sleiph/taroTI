@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&display=swap');
 
-html {
-
-}
-body {
-
-}
 * {
     margin: 0;
     padding: 0;
@@ -25,9 +19,6 @@ main {
     height: 10vh;
     display: inline-grid;
     align-items: center;
-}
-.header h2 {
-
 }
 
 .corpo {
@@ -55,10 +46,4 @@ main {
 
 .corpo a {
     color: white;
-}
-
-@media only screen and (max-width: 768px) {
-  .corpo img {
-
-  }
 }

@@ -68,9 +68,9 @@ public class TaroTiController {
             defaultValue="00"
         ) String carta,
         @RequestParam(
-                name="sentido",
-                required=false,
-                defaultValue="cima"
+            name="sentido",
+            required=false,
+            defaultValue="cima"
         ) String sentido,
         Model model
     ) {
