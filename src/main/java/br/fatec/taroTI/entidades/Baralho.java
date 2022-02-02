@@ -64,11 +64,39 @@ public class Baralho {
                         "A casa caiu.",
                         "Você caiu da casa."),
                     new Carta("Estrela", 17,
-                        "Olha pelo lado bom, agora não tem mais pra onde você cair!",
-                        "O lado bom de ter cavado sua própria sepultura é que agora ela já está pronta."),
+                            """
+                                    <h3>Flutter/Dart</h3>
+                                    <p>
+                                    <a href="https://sannacode.com/blog/advantages-and-disadvantages-using-flutter" >
+                                    Vantagens e desvantagens de usar Flutter
+                                    </a>.
+                                    </p>""",
+                            """
+                                    <h3>Flutter/Dart</h3>
+                                    <p>
+                                    <a href="https://sannacode.com/blog/advantages-and-disadvantages-using-flutter" >
+                                    Vantagens e desvantagens de usar Flutter
+                                    </a>.
+                                    </p>"""),
                     new Carta("Lua", 18,
-                        "Quando você descobre que não existe rivalidade entre Java e Javascript e você vai ter que aprender os dois.",
-                        "Longe de mim sugerir que você largue esse emprego... Mas largue esse emprego!"),
+                            """
+                                    <h3>Lua</h3>
+                                    <p>
+                                    Essa foi fácil.\s
+                                    <a href="https://www.lua.org" >
+                                    É Brasil porra! É Brasil caralho!!1!
+                                    </a>.
+                                    </p>
+                            """,
+                            """
+                                    <h3>Lua</h3>
+                                    <p>
+                                    Essa foi fácil.\s
+                                    <a href="https://www.lua.org" >
+                                    É Brasil porra! É Brasil caralho!!1!
+                                    </a>.
+                                    </p>
+                            """),
                     new Carta("Sol", 19,
                         "Vitória da razão.",
                         "É muito Sol na cabeça..."),
@@ -133,47 +161,214 @@ public class Baralho {
                     "paus/",
                     new Carta[] {
                         new Carta("Às", 1,
-                            "Tá criando várias paradas.",
-                            "Relaxa aí ô Artistão."),
+                                """
+                                        <h3>Frontend</h3>
+                                        <p>
+                                        <a href="https://www.alura.com.br/artigos/do-zero-para-programador-front-end" >Do zero para programador front-end</a>
+                                        </p>
+                                        """,
+                                """
+                                        <h3>Frontend</h3>
+                                        <p>
+                                        <a href="https://ichi.pro/pt/12-erros-cometidos-por-desenvolvedores-da-web-iniciantes-209661946537111" >12 erros cometidos por desenvolvedores da web iniciantes</a>
+                                        </p>
+                                        """),
                         new Carta("II", 2,
-                            "<a href='https://www.smashingmagazine.com/2018/02/comprehensive-website-planning-guide-part1/'>A parte chata primeiro.</a>",
-                            "<a href='https://www.researchgate.net/publication/227685190_Issues_in_Front-End_Decision_Making_on_Projects'>Tá fazendo certo o projeto?</a>"),
+                                """
+                                        <h3>Angular: o framework da Orientação a Objetos</h3>
+                                        <p>
+                                        Pontos positivos:
+                                        </p>
+                                        <ul>
+                                        <li>Várias implementações prontas que facilitam o processo de aprendizado e desenvolvimento;</li>
+                                        <li>Usado por grandes empresas. Criado e mantido pela Google que garante bom suporte e comunidade ativa.</li>
+                                        </ul>
+                                        """,
+                                """
+                                        <h3>Angular: o framework da Orientação a Objetos</h3>
+                                        <p>
+                                        Pontos negativos:
+                                        </p>
+                                        <ul>
+                                        <li>Verboso e os pré-requisitos são mais extensos do que as alternativas;</li>
+                                        <li>Pouco flexível, como possui uma estrutura sólida, é difícil desviar disso.</li>
+                                        </ul>
+                                        """),
                         new Carta("III",3,
-                            "O início de um sonho.",
-                            "Deu tudo errado."),
+                                """
+                                        <h3>Vue.js: o meio-termo</h3>
+                                        <p>
+                                        Pontos positivos:
+                                        </p>
+                                        <ul>
+                                        <li>Versátil;</li>
+                                        <li>Curva de aprendizado baixa;</li>
+                                        <li>Comunidade ativa e interessada, e também aberta a melhorias.</li>
+                                        </ul>
+                                        """,
+                                """
+                                        <h3>Vue.js: o meio-termo</h3>
+                                        <p>
+                                        Pontos negativos:
+                                        </p>
+                                        <ul>
+                                        <li>Sua popularidade é mais recente, e por isso é menos adotado no mercado.</li>
+                                        </ul>
+                                        """),
                         new Carta("IV", 4,
-                            "Sextou!",
-                            "Essa festa virou enterro..."),
+                                """
+                                        <h3>React: a biblioteca entre os frameworks</h3>
+                                        <p>
+                                        Pontos positivos:
+                                        </p>
+                                        <ul>
+                                        <li>Flexibilidade para criar aplicações pequenas ou grandes;</li>
+                                        <li>Liberdade de trabalhar como preferir, inclusive podendo usar JavaScript ou TypeScript;</li>
+                                        <li>Comunidade muito ativa e preocupação com iniciantes. Criada e mantida pelo Facebook, usada por plataformas como Twitter e Netflix.</li>
+                                        </ul>
+                                        """,
+                                """
+                                        <h3>React: a biblioteca entre os frameworks</h3>
+                                        <p>
+                                        Pontos negativos:
+                                        </p>
+                                        <ul>
+                                        <li>A flexibilidade pode ser prejudicial pois não ajuda quem desenvolve a manter uma boa organização;</li>
+                                        <li>Como evita assumir muitas responsabilidades, o uso de outras bibliotecas é constante e, além de aprender a desenvolver com React, também é importante aprender bibliotecas específicas.</li>
+                                        </ul>
+                                        """),
                         new Carta("V", 5,
-                            "O time tá dividido entre os que querem usar Bootstrap e os que nunca mais querem ouvir esse nome, parece que vai haver morte.",
-                            "Decide logo a porra do framework!"),
+                                """
+                                        <h3>Figma</h3>
+                                        <p>
+                                        "Opa amigo, tem que ficar igualzinho o layout que eu fiz hein?!"
+                                        </p>
+                                        """,
+                                """
+                                        <h3>Figma</h3>
+                                        <p>
+                                        Não tem jeito mais fácil de perder um amigo que dividindo um layout com ele.
+                                        </p>
+                                        """),
                         new Carta("VI", 6,
-                            "O aplicativo tá no ar, todo mundo te ama, pelo menos por enquanto.",
-                            "O aplicativo tá no ar, você fez tudo sozinho, ninguém nunca vai saber."),
+                                """
+                                        <h3>Bootstrap</h3>
+                                        <p>
+                                        "CSS? Que é isso?"
+                                        </p>
+                                        """,
+                                """
+                                        <h3>Bootstrap</h3>
+                                        <p>
+                                        "E então o Twitter criou o Bootstrap, e todos os sites foram iguais para todo o sempre. Fim."
+                                        </p>
+                                        """),
                         new Carta("VII", 7,
-                            "Ilusão & desilusão.",
-                            "Hesitação & Revés."),
+                                """
+                                        <h3>JQuery</h3>
+                                        <p>
+                                        Que é rápido, é.
+                                        </p>
+                                        """,
+                                """
+                                        <h3>JQuery</h3>
+                                        <p>
+                                        Muitas pessoas tem preconceito com JQuery, essas pessoas estão certas.
+                                        </p>
+                                        """),
                         new Carta("VIII", 8,
-                            "Finalmente a firma aceitou implementar aquele framework que você comentou quando entrou na empresa.",
-                            "O estagiário entrou querendo mudar tudo, você se sente velho e cansado."),
+                                """
+                                        <h3>Otimização</h3>
+                                        <p>O site tá pronto, agora faz direito.</p>
+                                        <p>Tem várias ferramentas de otimização de sites, eu só vou citar uma que tô com preguiça:</p>
+                                        <ul>
+                                        <li><a href="https://gulpjs.com/" >Gulp</a></li>
+                                        </ul>
+                                        """,
+                                """
+                                        <h3>Otimização</h3>
+                                        <p>
+                                        "Esse .png de 20 megas aqui? Pega nada não."
+                                        </p>
+                                        """),
                         new Carta("IX",9,
-                            "Depressão.",
-                            "Depressão pra caralho!"),
+                                """
+                                        <h3>CMS: Sistema de gerenciamento de conteúdo</h3>
+                                        <p>
+                                        Não há satisfação maior que mandar o cara do marketing arrumar, ele mesmo, a data de uma publicação.\s
+                                        </p>
+                                        """,
+                                """
+                                        <h3>CMS: Sistema de gerenciamento de conteúdo</h3>
+                                        <p>
+                                        "Wordpress ainda existe?"
+                                        </p>
+                                        <p>
+                                        "Sei não..."
+                                        </p>
+                                        """),
                         new Carta("X",10,
-                            "Pode delegar q tá tranquilo.",
-                            "Deixa os outros fazerem também, ô fominha."),
+                                """
+                                        <h3>AJAX: JavaScript assíncrono + XML</h3>
+                                        <p>
+                                        Sei o que é isso não, só ouvi dizer que é bom.
+                                        </p>
+                                        """,
+                                """
+                                        <h3>AJAX: JavaScript assíncrono + XML</h3>
+                                        <p>
+                                        Sei o que é isso não, só ouvi dizer que é bom.
+                                        </p>
+                                        """),
                         new Carta("Estagiário", 11,
-                            "Imaginação/Contemplação.",
-                            "Potencial desperdiçado."),
+                                """
+                                        <h3>HTML</h3>
+                                        <p>
+                                        <a href='https://www.smashingmagazine.com/2018/02/comprehensive-website-planning-guide-part1/'>A parte chata primeiro.</a>
+                                        </p>
+                                        """,
+                                """
+                                        <h3>HTML</h3>
+                                        <p>
+                                        <a href='https://www.researchgate.net/publication/227685190_Issues_in_Front-End_Decision_Making_on_Projects'>Tá fazendo certo o projeto?</a>
+                                        </p>
+                                        """),
                         new Carta("Júnior",12,
-                            "Lembra daquela ideia que vc teve pra uma startup? Gênio!",
-                            "Lembra daquela ideia que vc teve pra uma startup? Jênio..."),
+                                """
+                                        <h3>CSS</h3>
+                                        <p>
+                                        CSS (Planilhas de estilo em cascata) é usada para estilizar e arranjar páginas web — por exemplo, para alterar a fonte, cor, tamanho e espaçamento do seu conteúdo, separá-lo em multiplas colunas, ou então adicionar animações e outras implementações decorativas. Esse módulo provê um começo sutil em seu caminho pelo domínio do CSS com o básico de como ele funciona, como é a aprência da sintaxe e como você pode começar a utilizá-lo para estilizar seu HTML.
+                                        <a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/First_steps">¹</a>
+                                        </p>
+                                        """,
+                                """
+                                        <h3>CSS</h3>
+                                        <p>
+                                        Se você aprender a usar Grid Layout vai ser a primeira pessoa na Terra a ter feito tal proeza.
+                                        </p>
+                                        """),
                         new Carta("Pleno", 13,
-                            "Zé povinho.",
-                            "Talarico."),
+                                """
+                                        <h3>PHP</h3>
+                                        <p>
+                                        Não faz essa cara, você tirou PHP, aceite isso!
+                                        </p>
+                                        """,
+                                """
+                                        <h3>PHP</h3>
+                                        <p>
+                                        Não faz essa cara, você tirou PHP, aceite isso!
+                                        </p>
+                                        """),
                         new Carta("Sênior",14,
-                            "Steve Jobs.",
-                            "Bill Gates.")
+                                """
+                                        <h3>javaScript</h3>
+                                        <p>Qual a linguagem certa pro frontend? A única que existe, dizem os especialistas.</p>
+                                        """,
+                                """
+                                        <h3>javaScript</h3>
+                                        <p>1 + 1 = 11</p>
+                                        """)
                     }
             ),
             new Naipe(
@@ -181,47 +376,133 @@ public class Baralho {
                     "copos/",
                     new Carta[] {
                         new Carta("Às",1,
-                            "Vai começar o amor.",
-                            "Vai começar de cafonice."),
+                                """
+                                        <h3>DevOps</h3>
+                                        <p>DevOps, é uma pratica da engenharia de software e TI que unifica o desenvolvimento de software(Dev) e  as operações de TI(Ops), tendo característica de defender a automação e monitoramento de todas as fases da construção de um software (desde a integração, teste, liberação para implantação, ao gerenciamento de infraestrutura) auxiliando as empresas no gerenciamento de lançamento de novas versões, deixando o ambiente padronizado em ciclos de desenvolvimento menores, aumentando a frequência de implementação, deixando as liberações mais seguras, em alinhamento próximo com os objetivos de negócio. (<a href="http://ninjadolinux.com.br/devops-desenvolvimento-de-software-e-operacao/">fonte</a>)</p>
+                                        """,
+                                """
+                                        <h3>DevOps</h3>
+                                        <p><a href="https://mundodevops.com/blog/8-praticas-que-nao-sao-devops/#:~:text=Uma%20das%20pr%C3%A1ticas%20que%20n%C3%A3o%20s%C3%A3o%20DevOps%20%C3%A9%20a%20n%C3%A3o,risco%20de%20n%C3%A3o%20darem%20certo.">8 Práticas Que Não São DevOps</a></p>
+                                        """),
                         new Carta("II",2,
-                            "Vai achar alguém.",
-                            "Vai perder alguém."),
+                                """
+                                        <h3>Planejamento</h3>
+                                        <p>Na fase de planejamento, as equipes de DevOps idealizam, definem e descrevem os recursos e as funcionalidades dos aplicativos e sistemas que estão construindo. (<a href="https://azure.microsoft.com/pt-br/overview/what-is-devops/#devops-overview">fonte</a>)</p>
+                                        <p><a href="https://www.jenkins.io/">Jenkins</a></p>
+                                        """,
+                                """
+                                        <h3>Planejamento</h3>
+                                        <p>A fase de planejamento do DevOps geralmente é vista como o primeiro estágio de DevOps, mas isso não é muito preciso. Na prática, as equipes de software modernas funcionam em ciclos apertados, em que cada fase informa continuamente os outros por meio de lições aprendidas.(<a href="https://docs.microsoft.com/pt-br/devops/plan/planning-efficient-workloads-with-devops">fonte</a>)</p>
+                                        <p><a href="https://www.jenkins.io/">Jenkins</a></p>
+                                        """),
                         new Carta("III", 3,
-                            "Sextou na festa da firma.",
-                            "Ultimamente amizade é só networking."),
+                                """
+                                        <h3>Codificação</h3>
+                                        <p><a href="https://www.alura.com.br/artigos/o-que-e-git-github">Git e Github: O que são, Como Configurar e Primeiros Passos</a></p>
+                                        """,
+                                """
+                                        <h3>Codificação</h3>
+                                        <p><a href="https://tableless.com.br/tudo-que-voce-queria-saber-sobre-git-e-github-mas-tinha-vergonha-de-perguntar/">Tudo que você queria saber sobre Git e GitHub, mas tinha vergonha de perguntar</a></p>
+                                        """),
                         new Carta("IV",4,
-                            "0 novas mensagens.",
-                            "Refreshe seu e-mail."),
+                                """
+                                        <h3>Codificação</h3>
+                                        <p><a href="https://blog.csptecnologia.com/por-que-usar-o-jira-software/">Por que usar o Jira Software? Saiba os motivos!</a></p>
+                                        """,
+                                """
+                                        <h3>Codificação</h3>
+                                        <p><a href="https://www.youtube.com/watch?v=aTjZxZX99Hw">O que é Jira? Como usar Jira em 2022?</a></p>
+                                        """),
                         new Carta("V",5,
-                            "Perda.",
-                            "Aceitação."),
+                                """
+                                        <h3>Codificação</h3>
+                                        <p><a href="https://rockcontent.com/br/blog/o-que-e-java/">O que é Java? Conheça as particularidades dessa linguagem de programação</a></p>
+                                        """,
+                                """
+                                        <h3>Codificação</h3>
+                                        <p><a href="https://www.zup.com.br/blog/java">Java: tudo o que você precisa saber para começar</a></p>
+                                        """),
                         new Carta("VI", 6,
-                            "No tempo do jQuery é que era bom...",
-                            "Lembra do DreamWeaver? Hein? Lembra???"),
+                                """
+                                        <h3>Build</h3>
+                                        <p><a href="https://www.dio.me/articles/tutorial-completo-do-maven-para-iniciantes">Tutorial completo do Maven para iniciantes</a></p>
+                                        """,
+                                """
+                                        <h3>Build</h3>
+                                        <p><a href="https://medium.com/collabcode/come%C3%A7ando-com-o-gradle-4e96fd12d933">Começando com o Gradle</a></p>
+                                        """),
                         new Carta("VII",7,
-                            "Parece que vai dar tudo certo. Parece...",
-                            "Investiu em bitcoin?"),
+                                """
+                                        <h3>Build</h3>
+                                        <p><a href="https://medium.com/@renatoluizcarvalho/azure-devops-e-sonarcloud-c31e5edeedb4">Azure DevOps e SonarCloud</a></p>
+                                        """,
+                                """
+                                        <h3>Build</h3>
+                                        <p><a href="https://docs.scala-lang.org/getting-started/sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.html">Getting started with Scala and SBT on the command line</a></p>
+                                        """),
                         new Carta("VIII", 8,
-                            "Pesquise no google: 'What happens when a sprint fails?'",
-                            "Deve ter um jeito de explicar que esse sprint foi culpa de todo mundo menos sua."),
+                                """
+                                        <h3>Testes</h3>
+                                        <p><a href="https://www.devmedia.com.br/junit-tutorial/1432">JUnit: Implementando testes unitários em Java</a></p>
+                                        """,
+                                """
+                                        <h3>Testes</h3>
+                                        <p><a href="http://blog.triadworks.com.br/junit-testando-fluxos-de-excecao-e-erro">jUnit: Testando fluxos de exceção e erro</a></p>
+                                        """),
                         new Carta("IX",9,
-                            "<a href='endeavor.org.br/estrategia-e-gestao/como-transformar-objetivo-okr-meta'>Pergunte à sua mãe sobre OKRs</a>",
-                            "<a href='https://gtmhub.com/blog/why-okrs-fail'>OKR de Ku é Rola.</a>"),
+                                """
+                                        <h3>Testes</h3>
+                                        <p><a href="https://www.treinaweb.com.br/blog/o-que-e-selenium">O que é Selenium?</a></p>
+                                        """,
+                                """
+                                        <h3>Testes</h3>
+                                        <p><a href="https://www.devmedia.com.br/teste-de-performance-com-jmeter/34621">Teste de performance com JMeter</a></p>
+                                        """),
                         new Carta("X", 10,
-                            "E não é que existe mesmo esse tal de brilho nos olhos? Afe.",
-                            "Sabe quem é o boomer da firma? Se não, então provavelmente é você."),
+                                """
+                                        <h3>Release</h3>
+                                        <p>A entrega é o processo de implantação de aplicativos nos ambientes de produção de maneira consistente e confiável. A fase de entrega também inclui a implantação e a configuração da infraestrutura fundamental totalmente governada que compõe esses ambientes.(<a href="https://azure.microsoft.com/pt-br/overview/what-is-devops/#devops-overview">fonte</a>)</p>
+                                        """,
+                                """
+                                        <h3>Release</h3>
+                                        <p><a href="https://docs.microsoft.com/pt-br/azure/devops/pipelines/policies/retention?view=azure-devops&tabs=yaml">Definir políticas de retenção para compilações, versões e testes</a></p>
+                                        """),
                         new Carta("Estagiário",11,
-                            "Os devs não te escutam.",
-                            "Os ops não te entendem."),
+                                """
+                                        <h3>Deploy</h3>
+                                        <p><a href="https://www.microserviceit.com.br/en/docker/">Docker: O que é? Como usar? Serve para minha empresa?</a></p>
+                                        """,
+                                """
+                                        <h3>Deploy</h3>
+                                        <p><a href="https://www.youtube.com/watch?v=uroAHS9PuNY">Intensivão Docker do Zero</a></p>
+                                        """),
                         new Carta("Júnior",12,
-                            "Quase um príncipe encantado.",
-                            "Deixa de ser diva, flor."),
+                                """
+                                        <h3>Operações</h3>
+                                        <p><a href="https://www.redhat.com/pt-br/topics/containers/what-is-kubernetes">O que é Kubernetes?</a></p>
+                                        """,
+                                """
+                                        <h3>Operações</h3>
+                                        <p><a href="https://www.totvs.com/blog/developers/kubernetes/">Kubernetes: o que é, importância e vantagens de usar</a></p>
+                                        """),
                         new Carta("Pleno", 13,
-                            "Emoções são demais!",
-                            "São emoções demais..."),
+                                """
+                                        <h3>Monitoramento</h3>
+                                        <p><a href="https://www.datadoghq.com/solutions/devops/">DataDog</a></p>
+                                        """,
+                                """
+                                        <h3>Monitoramento</h3>
+                                        <p><a href="https://raygun.com/?utm_source=generic&utm_medium=adwords&utm_campaign=brand&utm_term=raygun&utm_matchtype=e&gclid=Cj0KCQiA9OiPBhCOARIsAI0y71A92uuAzKcgjNtx0y-lTLLA8a0MWZSooMeP-ypV9IVEAcWzwwLVXY4aAuNDEALw_wcB">RayGun</a></p>
+                                        """),
                         new Carta("Sênior",14,
-                            "Manja das emoções.",
-                            "Tá viajando demais nas emoções.")
+                                """
+                                        <h3>CI/CD (Integração Contínua e Entrega Contínua)</h3>
+                                        <p>O gerenciamento de configuração refere-se ao gerenciamento do estado dos recursos em um sistema, incluindo servidores, máquinas virtuais e bancos de dados. Usando ferramentas de gerenciamento de configuração, as equipes podem implementar alterações de maneira controlada e sistemática, reduzindo os riscos de modificar a configuração do sistema. (<a href="https://azure.microsoft.com/pt-br/overview/what-is-devops/#practices">fonte</a>)</p>
+                                        """,
+                                """
+                                        <h3>CI/CD (Integração Contínua e Entrega Contínua)</h3>
+                                        <p><a href="https://gabriel-faraday.medium.com/o-que-%C3%A9-ci-cd-onde-eu-uso-isso-57e9b8ad8c73">O que é CI/CD? Onde eu uso isso?</a></p>
+                                        """)
                     }
             ),
             new Naipe(
