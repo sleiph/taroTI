@@ -42,6 +42,7 @@ main {
 
 .corpo p {
     padding-bottom: 6px;
+    text-align: justify;
 }
 
 .corpo a {

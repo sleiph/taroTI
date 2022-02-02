@@ -46,7 +46,6 @@ Spring Web | Spring Data | Maven | MongoDB | Thymeleaf
     - ler só uma carta por dia
 
 - Site
-    - criar uma página 404 e deixar indices errados irem pra lá
     - Trocar as imagens por svg
     
 - Arte

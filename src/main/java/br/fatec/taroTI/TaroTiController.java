@@ -22,17 +22,11 @@ public class TaroTiController {
     CartaRepo cartaRepositorio;
 
     public Naipe getNaipeByIndice(String indice) {
-        Naipe myNaipe = naipeRepositorio.findNaipeByIndice(indice);
-        if (myNaipe==null)
-            myNaipe = naipeRepositorio.findNaipeByIndice("0");
-        return myNaipe;
+        return naipeRepositorio.findNaipeByIndice(indice);
     }
 
     public Carta getCartaByValorENaipe(String valor, Naipe naipe) {
-        Carta myCarta = cartaRepositorio.findCartaByValorENaipe(valor, naipe.indice);
-        if (myCarta==null)
-            myCarta = cartaRepositorio.findCartaByValorENaipe("1", naipe.indice);
-        return myCarta;
+        return cartaRepositorio.findCartaByValorENaipe(valor, naipe.indice);
     }
 
     @GetMapping("/")
