@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.Optional;
 import java.util.Random;
 
 @Controller
@@ -21,18 +22,13 @@ public class TaroTiController {
     @Autowired
     CartaRepo cartaRepositorio;
 
-    public Naipe getNaipeByIndice(String indice) {
-        return naipeRepositorio.findNaipeByIndice(indice);
-    }
-
-    public Carta getCartaByValorENaipe(String valor, Naipe naipe) {
-        return cartaRepositorio.findCartaByValorENaipe(valor, naipe.indice);
+    public Carta getCartaByValorENaipe(Long valor, Naipe naipe) {
+        return cartaRepositorio.findByValorAndNaipe(valor, naipe);
     }
 
     @GetMapping("/")
-    public String home(
-            Model model
-    ) {
+    public String home(Model model) {
+
         int n = new Random().nextInt(5),
             menor, maior;
 
@@ -55,12 +51,12 @@ public class TaroTiController {
             name="naipe",
             required=false,
             defaultValue="00"
-        ) String naipe,
+        ) Long naipe,
         @RequestParam(
             name="carta",
             required=false,
             defaultValue="00"
-        ) String carta,
+        ) Long carta,
         @RequestParam(
             name="sentido",
             required=false,
@@ -69,15 +65,20 @@ public class TaroTiController {
         Model model
     ) {
 
-        int iNaipe = Integer.parseInt(naipe),
-            iCarta = Integer.parseInt(carta);
+        Optional<Naipe> myNaipeOp = naipeRepositorio.findById(naipe);
 
-        Naipe myNaipe = getNaipeByIndice(String.valueOf(iNaipe));
-        Carta myCarta = getCartaByValorENaipe( String.valueOf(iCarta), myNaipe );
+        if (myNaipeOp.isEmpty())
+            return "leitura";
+
+        Naipe myNaipe = myNaipeOp.get();
+        Carta myCarta = getCartaByValorENaipe(carta, myNaipe);
+
+        if (myCarta == null)
+            return "leitura";
 
         model.addAttribute("nome", myCarta + " de " + myNaipe);
         model.addAttribute("carta", myCarta);
-        model.addAttribute("caminho", myNaipe.caminho + String.format("%02d", myCarta.valor));
+        model.addAttribute("caminho", myNaipe.getCaminho() + "/" + String.format("%02d", myCarta.valor));
         model.addAttribute("sentido", sentido);
 
         return "leitura";
