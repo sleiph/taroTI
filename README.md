@@ -1,6 +1,6 @@
 # TaroTI 👁‍🗨
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Java](https://img.shields.io/static/v1?label=&message=postgresql&color=ED8B00&logo=openjdk&logoColor=FFFFFF)
 ![Spring](https://img.shields.io/static/v1?label=&message=Spring&color=6DB33F&logo=Spring&logoColor=FFFFFF)
 ![PostgreSQL](https://img.shields.io/static/v1?label=&message=postgresql&color=0064A5&logo=postgresql&logoColor=FFFFFF)
 
