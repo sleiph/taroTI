@@ -19,6 +19,8 @@ Pra ver alguma carta específica é só trocar os valores no endereço da leitur
 - O valor das cartas, espero, vai de 0 a 21 pra arcana maior e de 0 a 14 pras menores, isso quando eu acabar de desenhar tudo.
 - O valor do sentido pode ser "cima", pra carta ser exibida de pé, ou qualquer outra coisa que você quiser, pra ser exibida invertida.
 
+Enquanto eu atualizo tudo aqui, copiei as leituras das cartas do site [Tarotfarm](https://tarotfarm.com.br/significados-das-78-cartas-do-tarot/).
+
 ## Instruções
 
 - Clonar o projeto
@@ -36,12 +38,9 @@ Spring Web | Spring Data | Maven | PostgreSQL | Thymeleaf
     * leituras mais complexas
     * ler só uma carta por dia
 
-- Projeto
-    * Adicionar um logger
-    * configurar a porta pelas properties
-
 - Site
     * Trocar as imagens por svg
+    * Popular as páginas
     
 - Arte
     * criar ilustrações relacionadas a programação

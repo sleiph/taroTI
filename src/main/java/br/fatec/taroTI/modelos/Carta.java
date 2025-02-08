@@ -11,8 +11,8 @@ public class Carta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Enumerated(EnumType.ORDINAL)
-    private ValorType valor;
+    @Column
+    private Integer valor;
     @Enumerated(EnumType.STRING)
     private NaipeType naipe;
     @Column(name = "descricao_certa")
@@ -20,7 +20,7 @@ public class Carta {
     @Column(name = "descricao_torta")
     private String descricaoTorta;
 
-    public ValorType getValor() {
+    public Integer getValor() {
         return valor;
     }
 
@@ -41,7 +41,10 @@ public class Carta {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Carta carta = (Carta) o;
-        return Objects.equals(id, carta.id) && valor == carta.valor && naipe == carta.naipe && Objects.equals(descricaoCerta, carta.descricaoCerta) && Objects.equals(descricaoTorta, carta.descricaoTorta);
+        return Objects.equals(id, carta.id) && Objects.equals(valor, carta.valor) &&
+                naipe == carta.naipe &&
+                Objects.equals(descricaoCerta, carta.descricaoCerta) &&
+                Objects.equals(descricaoTorta, carta.descricaoTorta);
     }
 
     @Override
@@ -51,9 +54,10 @@ public class Carta {
 
     @Override
     public String toString() {
+        ValorType valorType = ValorType.getByNaipeAndValor(this.naipe, valor);
         if (this.naipe==NaipeType.MAIOR)
-            return valor.getNome();
-        return valor.getNome() + " de " + naipe.getNome();
+            return valorType.getNome();
+        return valorType.getNome() + " de " + naipe.getNome();
     }
 
 }

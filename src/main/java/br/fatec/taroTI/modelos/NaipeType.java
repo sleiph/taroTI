@@ -5,28 +5,30 @@ import java.util.Map;
 
 public enum NaipeType {
 
-    PAUS(1, "Paus", "paus"),
-    OUROS(2, "Ouros", "ouros"),
-    ESPADAS(3, "Espadas", "espadas"),
-    COPAS(4, "Copas", "copos"),
-    MAIOR(0, "Arcana Maior", "maior");
+    PAUS(1, "Paus", "paus", "Fogo"),
+    OUROS(2, "Ouros", "ouros", "Terra"),
+    ESPADAS(3, "Espadas", "espadas", "Ar"),
+    COPAS(4, "Copas", "copos", "Água"),
+    MAIOR(0, "Arcana Maior", "maior", null);
 
     private final int valor;
     private final String nome;
     private final String caminho;
+    private final String elemento;
 
     private static final Map<Integer, NaipeType> mapaNaipes = new HashMap<>();
+
+    NaipeType(int valor, String nome, String caminho, String elemento) {
+        this.valor = valor;
+        this.nome = nome;
+        this.caminho = caminho;
+        this.elemento = elemento;
+    }
 
     static{
         for (NaipeType naipe : values()) {
             mapaNaipes.put(naipe.valor, naipe);
         }
-    }
-
-    NaipeType(int valor, String nome, String caminho) {
-        this.valor = valor;
-        this.nome = nome;
-        this.caminho = caminho;
     }
 
     public String getNome() {

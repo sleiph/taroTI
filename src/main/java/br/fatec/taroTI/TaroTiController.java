@@ -5,6 +5,8 @@ import br.fatec.taroTI.modelos.NaipeType;
 import br.fatec.taroTI.modelos.ValorType;
 import br.fatec.taroTI.repositorios.*;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,21 +18,22 @@ import java.util.Random;
 @Controller
 public class TaroTiController {
 
+    Logger LOGGER = LoggerFactory.getLogger(TaroTiController.class);
+
     @Autowired
     CartaRepo cartaRepositorio;
 
-    public Carta getCartaByValor(ValorType valor, NaipeType naipe) {
+    public Carta getCartaByValor(Integer valor, NaipeType naipe) {
         return cartaRepositorio.findByValorAndNaipe(valor, naipe);
     }
 
     @GetMapping("/")
     public String home(Model model) {
 
-        int n = new Random().nextInt(5),
-            menor, maior;
+        int n = new Random().nextInt(5);
 
-        menor = (new Random().nextInt(14) + 1);
-        maior = new Random().nextInt(22);
+        int menor = (new Random().nextInt(14) + 1);
+        int maior = new Random().nextInt(22);
 
         String sentido = (new Random().nextInt(2)==1) ? "cima" : "baixo";
 
@@ -65,14 +68,16 @@ public class TaroTiController {
         NaipeType naipeType = NaipeType.getNaipePorValor(naipe);
         ValorType valor = ValorType.getByNaipeAndValor(naipeType, carta);
 
-        Carta myCarta = getCartaByValor(valor, naipeType);
+        Carta myCarta = getCartaByValor(carta, naipeType);
 
-        if (myCarta == null)
+        if (myCarta == null) {
+            LOGGER.error("Carta não encontrada: valor={}:{}; naipe={}:{}", carta, valor, naipe, naipeType);
             return "leitura";
+        }
 
         model.addAttribute("nome", myCarta.toString());
         model.addAttribute("carta", myCarta);
-        model.addAttribute("caminho", myCarta.getNaipe().getCaminho() + "/" + String.format("%02d", myCarta.getValor().getValor()));
+        model.addAttribute("caminho", myCarta.getNaipe().getCaminho() + "/" + String.format("%02d", valor.getValor()));
         model.addAttribute("sentido", sentido);
 
         return "leitura";
