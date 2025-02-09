@@ -18,7 +18,7 @@
         <div class="corpo">
             <div class="mensagem">
                 <p>Faça sua leitura clicando
-                    <a href="/leitura" th:href="@{'/leitura?naipe=' + ${naipe} + '&carta=' + ${(naipe > 0) ? menor : maior} + '&sentido=' + ${sentido}}">aqui</a>.
+                    <a href="/leitura" th:href="@{'/leitura?naipe=' + ${naipe} + '&carta=' + ${valor} + '&sentido=' + ${sentido}}">aqui</a>.
                 </p>
                 <p>Ou se você só liga pras arcanas maiores, clique
                     <a href="/leitura" th:href="@{'/leitura?naipe=' + 0 + '&carta=' + ${maior} + '&sentido=' + ${sentido}}">aqui</a>.

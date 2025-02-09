@@ -20,6 +20,9 @@ public class Carta {
     @Column(name = "descricao_torta")
     private String descricaoTorta;
 
+    @Transient
+    private String sentido;
+
     public Integer getValor() {
         return valor;
     }
@@ -34,6 +37,14 @@ public class Carta {
 
     public String getDescricaoTorta() {
         return descricaoTorta;
+    }
+
+    public String getSentido() {
+        return this.sentido;
+    }
+
+    public void setSentido() {
+        this.sentido = sentido;
     }
 
     @Override
