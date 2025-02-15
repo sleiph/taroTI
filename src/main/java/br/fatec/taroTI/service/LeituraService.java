@@ -7,6 +7,7 @@ import br.fatec.taroTI.modelos.NaipeType;
 import br.fatec.taroTI.repositorios.CartaRepo;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
+import io.micrometer.common.util.StringUtils;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,10 +36,12 @@ public class LeituraService {
         return cartaRepositorio.findByValorAndNaipe(valor, naipe);
     }
 
-    public Leitura getLeitura() {
+    public Leitura getLeitura(Integer naipe) {
         Random random = new Random();
 
-        int naipe = random.nextInt(5);
+        if (naipe == null)
+            naipe = random.nextInt(4) + 1;
+
         int valor = getValor(random, naipe);
         String sentido = (random.nextBoolean()) ? "cima" : "baixo";
 

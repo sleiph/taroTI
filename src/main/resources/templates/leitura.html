@@ -17,10 +17,10 @@
 
         <div class="corpo">
             <img th:src="'img/' + ${caminho} + '.png'"
-                 th:style="'transform:rotate(' + ${ (sentido == 'cima') ? '0deg' : '180deg' } + ');'" />
+                 th:style="'transform:rotate(' + ${ (carta.getSentido() == 'cima') ? '0deg' : '180deg' } + ');'" />
             <div class="mensagem">
                 <th:block th:utext="${
-                    (sentido == 'cima') ? carta.getDescricaoCerta() : carta.getDescricaoTorta()
+                    (carta.getSentido() == 'cima') ? carta.getDescricaoCerta() : carta.getDescricaoTorta()
                 }"></th:block>
             </div>
         </div>

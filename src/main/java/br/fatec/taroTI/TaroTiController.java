@@ -22,14 +22,7 @@ public class TaroTiController {
     LeituraService leituraService;
 
     @GetMapping("/")
-    public String home(Model model) {
-
-        Leitura leitura = leituraService.getLeitura();
-
-        model.addAttribute("naipe", leitura.getNaipe());
-        model.addAttribute("valor", leitura.getValor());
-        model.addAttribute("sentido", leitura.getSentido());
-
+    public String home() {
         return "index";
     }
 
@@ -38,35 +31,23 @@ public class TaroTiController {
             HttpServletRequest request,
             @RequestParam(
                     name="naipe",
-                    required=false,
-                    defaultValue="00"
+                    required=false
             ) Integer naipe,
-            @RequestParam(
-                    name="carta",
-                    required=false,
-                    defaultValue="00"
-            ) Integer carta,
-            @RequestParam(
-                    name="sentido",
-                    required=false,
-                    defaultValue="cima"
-            ) String sentido,
             Model model
     ) {
 
-        Leitura leitura = new Leitura(naipe, carta, sentido);
+        Leitura leitura = leituraService.getLeitura(naipe);
 
         Carta myCarta = leituraService.getCarta(leitura, request);
         if (myCarta == null) {
-            LOGGER.error("Carta não encontrada: valor={}; naipe={}", carta, naipe);
+            LOGGER.error("Carta não encontrada: naipe={}", naipe);
             return "leitura";
         }
 
-        String caminho = myCarta.getNaipe().getCaminho() + "/" + String.format("%02d", carta);
+        String caminho = myCarta.getNaipe().getCaminho() + "/" + String.format("%02d", myCarta.getValor());
 
         model.addAttribute("carta", myCarta);
         model.addAttribute("caminho", caminho);
-        model.addAttribute("sentido", sentido);
 
         return "leitura";
     }

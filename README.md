@@ -35,6 +35,7 @@ Spring Web | Spring Data | Maven | PostgreSQL | Thymeleaf
 
 ## Fazer:
 - Negócio
+    * separar um cache/endpoint pras arcanas altas e um pra leitura geral
     * leituras mais complexas
     * ler só uma carta por dia
 
