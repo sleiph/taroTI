@@ -37,29 +37,28 @@ public class LeituraService {
 
     public Leitura getLeitura() {
         Random random = new Random();
+
         int naipe = random.nextInt(5);
-
-        int valor;
-        if (naipe > 0)
-            valor = (random.nextInt(14) + 1);
-        else
-            valor = random.nextInt(22);
-
+        int valor = getValor(random, naipe);
         String sentido = (random.nextBoolean()) ? "cima" : "baixo";
 
         return new Leitura(naipe, valor, sentido);
     }
 
+    protected int getValor(Random random, int naipe) {
+        return (naipe > 0) ?
+                (random.nextInt(14) + 1) :
+                (random.nextInt(22));
+    }
+
     public Carta getCarta(Leitura leitura, HttpServletRequest request) {
 
-        LocalDateTime dia = LocalDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT);
-        ChaveCacheDTO chaveCache = new ChaveCacheDTO(request.getSession().getId(), dia);
+        ChaveCacheDTO chaveCache = new ChaveCacheDTO(request.getSession().getId(), getDia());
 
         Carta cartaCache = memoizationLeitura.getIfPresent(chaveCache);
 
-        if (cartaCache != null) {
+        if (cartaCache != null)
             return cartaCache;
-        }
 
         NaipeType naipeType = NaipeType.getNaipePorValor(leitura.getNaipe());
         Carta carta = getCartaByValor(leitura.getValor(), naipeType);
@@ -67,6 +66,10 @@ public class LeituraService {
         memoizationLeitura.put(chaveCache, carta);
 
         return carta;
+    }
+
+    protected LocalDateTime getDia() {
+        return LocalDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT);
     }
 
 }
