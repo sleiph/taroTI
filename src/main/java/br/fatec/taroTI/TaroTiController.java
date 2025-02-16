@@ -29,6 +29,28 @@ public class TaroTiController {
     @GetMapping("/leitura")
     public String leitura(
             HttpServletRequest request,
+            Model model
+    ) {
+
+        Leitura leitura = leituraService.getLeitura(null);
+
+        Carta myCarta = leituraService.getCarta(leitura, request, false);
+        if (myCarta == null) {
+            LOGGER.error("Carta não encontrada.");
+            return "leitura";
+        }
+
+        String caminho = myCarta.getNaipe().getCaminho() + "/" + String.format("%02d", myCarta.getValor());
+
+        model.addAttribute("carta", myCarta);
+        model.addAttribute("caminho", caminho);
+
+        return "leitura";
+    }
+
+    @GetMapping("/maior")
+    public String maior(
+            HttpServletRequest request,
             @RequestParam(
                     name="naipe",
                     required=false
@@ -38,9 +60,46 @@ public class TaroTiController {
 
         Leitura leitura = leituraService.getLeitura(naipe);
 
-        Carta myCarta = leituraService.getCarta(leitura, request);
+        Carta myCarta = leituraService.getCarta(leitura, request, true);
         if (myCarta == null) {
             LOGGER.error("Carta não encontrada: naipe={}", naipe);
+            return "leitura";
+        }
+
+        String caminho = myCarta.getNaipe().getCaminho() + "/" + String.format("%02d", myCarta.getValor());
+
+        model.addAttribute("carta", myCarta);
+        model.addAttribute("caminho", caminho);
+
+        return "leitura";
+    }
+
+    @GetMapping("/carta")
+    public String carta(
+            HttpServletRequest request,
+            @RequestParam(
+                    name="naipe",
+                    required=false,
+                    defaultValue="00"
+            ) Integer naipe,
+            @RequestParam(
+                    name="carta",
+                    required=false,
+                    defaultValue="00"
+            ) Integer carta,
+            @RequestParam(
+                    name="sentido",
+                    required=false,
+                    defaultValue="cima"
+            ) String sentido,
+            Model model
+    ) {
+
+        Leitura leitura = leituraService.getLeituraDireta(naipe, carta, sentido);
+
+        Carta myCarta = leituraService.getCartaDoBanco(leitura);
+        if (myCarta == null) {
+            LOGGER.error("Carta não encontrada: naipe={}, carta={}, sentido={}", naipe, carta, sentido);
             return "leitura";
         }
 

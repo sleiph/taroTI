@@ -4,7 +4,7 @@
     <meta charset="UTF-8" http-equiv="Content-Type">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <title>TaroTI</title>
+    <title th:text="'TaroTI - ' + ${carta.toString()}"></title>
 
     <link rel="icon" type="image/png" sizes="96x96" href="/icone.png">
     <link rel="stylesheet" href="estilos.css">
@@ -12,17 +12,16 @@
 <body>
     <main>
         <div class="header">
-            <h2>TaroTI</h2>
+            <h2 th:text="${carta.toString()}"></h2>
         </div>
 
         <div class="corpo">
+            <img th:src="'img/' + ${caminho} + '.png'"
+                 th:style="'transform:rotate(' + ${ (carta.getSentido() == 'cima') ? '0deg' : '180deg' } + ');'" />
             <div class="mensagem">
-                <p>Faça sua leitura clicando
-                    <a href="/leitura" th:href="@{leitura}">aqui</a>.
-                </p>
-                <p>Ou se você só liga pras arcanas maiores, clique
-                    <a href="/maior" th:href="@{'/maior?naipe=' + 0}">aqui</a>.
-                </p>
+                <th:block th:utext="${
+                    (carta.getSentido() == 'cima') ? carta.getDescricaoCerta() : carta.getDescricaoTorta()
+                }"></th:block>
             </div>
         </div>
     </main>

@@ -48,26 +48,36 @@ public class LeituraService {
         return new Leitura(naipe, valor, sentido);
     }
 
+    public Leitura getLeituraDireta(Integer naipe, Integer valor, String sentido) {
+        return new Leitura(naipe, valor, sentido);
+    }
+
     protected int getValor(Random random, int naipe) {
         return (naipe > 0) ?
                 (random.nextInt(14) + 1) :
                 (random.nextInt(22));
     }
 
-    public Carta getCarta(Leitura leitura, HttpServletRequest request) {
+    public Carta getCarta(Leitura leitura, HttpServletRequest request, boolean isMaior) {
 
-        ChaveCacheDTO chaveCache = new ChaveCacheDTO(request.getSession().getId(), getDia());
+        ChaveCacheDTO chaveCache = new ChaveCacheDTO(request.getSession().getId(), getDia(), isMaior);
 
         Carta cartaCache = memoizationLeitura.getIfPresent(chaveCache);
 
         if (cartaCache != null)
             return cartaCache;
 
-        NaipeType naipeType = NaipeType.getNaipePorValor(leitura.getNaipe());
-        Carta carta = getCartaByValor(leitura.getValor(), naipeType);
+        Carta carta = getCartaDoBanco(leitura);
 
         memoizationLeitura.put(chaveCache, carta);
 
+        return carta;
+    }
+
+    public Carta getCartaDoBanco(Leitura leitura) {
+        NaipeType naipeType = NaipeType.getNaipePorValor(leitura.getNaipe());
+        Carta carta = getCartaByValor(leitura.getValor(), naipeType);
+        carta.setSentido(leitura.getSentido());
         return carta;
     }
 

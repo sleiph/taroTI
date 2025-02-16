@@ -43,7 +43,7 @@ public class Carta {
         return this.sentido;
     }
 
-    public void setSentido() {
+    public void setSentido(String sentido) {
         this.sentido = sentido;
     }
 

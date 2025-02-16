@@ -14,7 +14,7 @@ Um aplicativo que instancia uma carta de tarot cada vez que o endpoint é chamad
 
 Desenho das cartas baseado no [tarô de Marselha](https://pt.wikipedia.org/wiki/Tar%C3%B4_de_Marselha)
 
-Pra ver alguma carta específica é só trocar os valores no endereço da leitura:
+Pra ver alguma carta específica é só bater no endpoint `/carta?carta=1&naipe=1&sentido=cima` os valores no endereço da carta:
 - O valor do naipe 0 é a arcana maior e de 1 a 4 as menores
 - O valor das cartas, espero, vai de 0 a 21 pra arcana maior e de 0 a 14 pras menores, isso quando eu acabar de desenhar tudo.
 - O valor do sentido pode ser "cima", pra carta ser exibida de pé, ou qualquer outra coisa que você quiser, pra ser exibida invertida.
@@ -27,7 +27,7 @@ Enquanto eu atualizo tudo aqui, copiei as leituras das cartas do site [Tarotfarm
 - Baixar as dependências
 - Executar a config 'Launch'.
 
-O servidor fica online na [porta 8080](http://localhost:8080).
+O servidor fica online na [porta 8090](http://localhost:8090), mas pode ser mudado nas properties.
 
 ## Tecnologias
 
@@ -35,7 +35,6 @@ Spring Web | Spring Data | Maven | PostgreSQL | Thymeleaf
 
 ## Fazer:
 - Negócio
-    * separar um cache/endpoint pras arcanas altas e um pra leitura geral
     * leituras mais complexas
     * ler só uma carta por dia
 
