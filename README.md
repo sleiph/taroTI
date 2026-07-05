@@ -46,7 +46,7 @@ Spring Web | Spring Data | Maven | PostgreSQL | Thymeleaf
     * criar ilustrações relacionadas a programação
 
 - Testes
-    * fazer testes...
+    * criar testes...
 
 ## Licença
 
